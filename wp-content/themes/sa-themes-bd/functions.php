@@ -341,41 +341,21 @@ function fix_heading_hierarchy($content) {
         return $content;
     }
     
-    // Check if content has heading hierarchy issues
-    $dom = new DOMDocument();
-    $dom->loadHTML('<?xml encoding="utf-8" ?>' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-    
-    $headings = [];
-    $xpath = new DOMXPath($dom);
-    $heading_nodes = $xpath->query('//h1 | //h2 | //h3 | //h4 | //h5 | //h6');
-    
-    foreach ($heading_nodes as $node) {
-        $level = intval(substr($node->tagName, 1));
-        $headings[] = ['node' => $node, 'level' => $level];
-    }
-    
-    // Check for hierarchy violations and add accessibility attributes
-    $previous_level = 0;
-    foreach ($headings as $heading) {
-        $current_level = $heading['level'];
-        $node = $heading['node'];
+    // Use a safer approach without DOMDocument to avoid HTML5 tag warnings
+    $pattern = '/(<h[4-6][^>]*>)/i';
+    $content = preg_replace_callback($pattern, function($matches) {
+        $heading_tag = $matches[1];
         
-        // If heading jumps more than one level, add aria-level to clarify structure
-        if ($current_level > $previous_level + 1 && $previous_level > 0) {
-            // Add aria-level for screen readers
-            $node->setAttribute('aria-level', $current_level);
-            
-            // Add screen reader text to explain the hierarchy
-            $sr_text = $dom->createElement('span');
-            $sr_text->setAttribute('class', 'sr-only');
-            $sr_text->textContent = '(レベル ' . $current_level . ' 見出し) ';
-            $node->insertBefore($sr_text, $node->firstChild);
+        // Add aria-level attribute for better accessibility
+        if (strpos($heading_tag, 'aria-level') === false) {
+            $level = intval(substr($heading_tag, 2, 1));
+            $heading_tag = str_replace('>', ' aria-level="' . $level . '">', $heading_tag);
         }
         
-        $previous_level = $current_level;
-    }
+        return $heading_tag;
+    }, $content);
     
-    return $dom->saveHTML();
+    return $content;
 }
 
 // Apply heading hierarchy fix to content

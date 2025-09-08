@@ -1,6 +1,6 @@
         <footer>
             <div class="footer-block">
-				<a href="/"class="footer-logo" aria-label="ホームページに戻る"><img src="/wp-content/uploads/2025/05/Logo.webp" alt="サイトロゴ"></a>
+				<a href="/" class="footer-logo" aria-label="ホームページに戻る"><img src="/wp-content/uploads/2025/05/Logo.webp" alt="サイトロゴ"></a>
 				<div class="footer-lists">
 					<?php if (has_nav_menu('footer_menu_one')) { ?>
 						<div class="footer-list-one footer-list">

@@ -18,7 +18,7 @@ get_header(); ?>
 						<h1>K8カジノの評判やボーナスを解説！入出</h1>
 						<div class="operator-top-content-stars-block">
 							<div class="operator-top-content-stars">
-								<img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????">
+								<img src="/wp-content/uploads/2025/05/Stars.svg" alt="評価の星">
 							</div>
 							<div class="operator-top-content-number">
 								4.8 <span>/ 5</span>
@@ -28,11 +28,11 @@ get_header(); ?>
 					</div>
 					<div class="operator-top-content-right">
 						<div class="operator-top-content-right-item">
-							<img src="/wp-content/uploads/2025/05/yen.svg" alt="?????">
+							<img src="/wp-content/uploads/2025/05/yen.svg" alt="通貨アイコン">
 							<div>日本円使用可</div>
 						</div>
 						<div class="operator-top-content-right-item">
-							<img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????">
+							<img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="鳥居アイコン">
 							<div>日本円使用可</div>
 						</div>
 					</div>
@@ -101,7 +101,7 @@ get_header(); ?>
 			<div class="texts-plus-minus">
 				<div class="texts-plus-minus-left">
 					<div class="texts-plus-minus-title">
-						<img src="/wp-content/uploads/2025/06/plus.svg" alt="???????">
+						<img src="/wp-content/uploads/2025/06/plus.svg" alt="プラスアイコン">
 						<h2>おすすめポイント</h2>
 					</div>
 					<ul>
@@ -114,7 +114,7 @@ get_header(); ?>
 				</div>
 				<div class="texts-plus-minus-right">
 					<div class="texts-plus-minus-title">
-						<img src="/wp-content/uploads/2025/06/minus.svg" alt="????????">
+						<img src="/wp-content/uploads/2025/06/minus.svg" alt="マイナスアイコン">
 						<h2>残念ポイント</h2>
 					</div>
 					<ul>
@@ -171,7 +171,7 @@ get_header(); ?>
 					<div class="pay-system-body">
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-1.svg" alt="ロゴ">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -180,7 +180,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-2.svg" alt="ロゴ">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -189,7 +189,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-3.svg" alt="ロゴ">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -198,7 +198,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-4.svg" alt="ロゴ">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -211,10 +211,10 @@ get_header(); ?>
 					<div class="pay-system-body">
 						<div class="pay-system-body-row pay-logo-row">
 							<div class="pay-system-body-item" data-id="1">
-								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-1.svg" alt="ロゴ">
 							</div>
 							<div class="pay-system-body-item" data-id="2">
-								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-2.svg" alt="ロゴ">
 							</div>
 							<div class="pay-system-body-row pay-info-row" data-id="1">
 								<div class="pay-info-item">
@@ -247,10 +247,10 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-row pay-logo-row">
 							<div class="pay-system-body-item" data-id="3">
-								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-3.svg" alt="ロゴ">
 							</div>
 							<div class="pay-system-body-item" data-id="4">
-								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">alt="??">
+								<img src="/wp-content/uploads/2025/06/item-logo-4.svg" alt="ロゴ">
 							</div>
 							<div class="pay-system-body-row pay-info-row" data-id="3">
 								<div class="pay-info-item">
@@ -329,7 +329,7 @@ get_header(); ?>
 			</div>
 			<div class="comment-block">
 				<div class="comment-block-left">
-					<img src="/wp-content/uploads/2025/06/comment-image.webp">
+					<img src="/wp-content/uploads/2025/06/comment-image.webp" alt="コメント画像">
 				</div>
 				<div class="comment-block-right">で本人確認される最も早い方法は、ポータルのアカウントを使用することです。もしプレーヤーが本人確認されたアカウントを持っていない場合、オンラインで書類を送って本人確認をするよう提案されます。パスポートの見開きの写真2枚（メインページと登録ページ）を添付する必要があり、それぞれの写真には「」という署名と現在の日付の入ったシールが貼られていなければなりません。また、選手の顔とパスポートを広げた状態を映した短いビデオクリップを送信する必要があります。送信されたデータは通常10分以内に処理され、その後オペレーターから番号保持者の本人確認の電話がかかってきます。</div>
 			</div>
@@ -360,15 +360,15 @@ get_header(); ?>
 				<div class="title-info">関連リンク</div>
 				<div class="info-block-img-text">
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-1.webp" alt="?????????">
+						<img src="/wp-content/uploads/2025/06/img-text-1.webp" alt="関連画像">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-2.webp">alt="?????????">
+						<img src="/wp-content/uploads/2025/06/img-text-2.webp" alt="関連画像">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-3.webp">alt="?????????">
+						<img src="/wp-content/uploads/2025/06/img-text-3.webp" alt="関連画像">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 				</div>
@@ -380,7 +380,7 @@ get_header(); ?>
 		<div class="subscribe-description">ジャパカジニュースレターに登録して、カジノオファーやキャンペー<br> ン、限定ボーナスの最新情報をゲットしよう！</div>
 		<form class="subscribe-mail">
 			<div class="subscribe-input-group">
-				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon" alt="???????">
+				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon" alt="メールアイコン">
 				<input type="text" class="subscribe-mail-input" placeholder="ジャパカジニュースレタ">
 				<input type="submit" class="subscribe-mail-button" value="登録する">
 			</div>

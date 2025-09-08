@@ -10,3 +10,12 @@
 [2025-09-08 07:32:55] [ERROR] 2_nonce = 59875611a9
 [2025-09-08 07:32:55] [ERROR] 2_f = is-running-backup
 [2025-09-08 07:32:55] [ERROR] Front End Ajax Error END
+[2025-09-08 09:22:56] [ERROR] Front End Ajax Error START
+[2025-09-08 09:22:56] [ERROR] call = check-not-uploaded-backups
+[2025-09-08 09:22:56] [ERROR] 0_x = Failed to fetch
+[2025-09-08 09:22:56] [ERROR] 1_x = check-not-uploaded-backups
+[2025-09-08 09:22:56] [ERROR] 2_action = backup_migration
+[2025-09-08 09:22:56] [ERROR] 2_token = bmi
+[2025-09-08 09:22:56] [ERROR] 2_nonce = 1580f6ac8e
+[2025-09-08 09:22:56] [ERROR] 2_f = check-not-uploaded-backups
+[2025-09-08 09:22:56] [ERROR] Front End Ajax Error END

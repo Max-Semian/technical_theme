@@ -20,42 +20,42 @@ get_header(); ?>
 				<div class="main-bonus-container">
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
-								<span class="main-bonus-text">ボーナス</span>
-							</div>
-						</a>
-					</div>
-					<div class="main-bonus-container-row">
-						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
-								<span class="main-bonus-text">ボーナス</span>
-							</div>
-						</a>
-						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 					</div>
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
+								<span class="main-bonus-text">ボーナス</span>
+							</div>
+						</a>
+						<a href="#" class="main-bonus" target="_blank">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
+								<span class="main-bonus-text">ボーナス</span>
+							</div>
+						</a>
+					</div>
+					<div class="main-bonus-container-row">
+						<a href="#" class="main-bonus" target="_blank">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
@@ -66,38 +66,38 @@ get_header(); ?>
 				<div class="main-bonus-container">
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+							<div class="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="ボーナスアイコン">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
@@ -114,7 +114,7 @@ get_header(); ?>
 				<div class="text">オンラインカジノの中でもおすすめのサイト探しや、最新カジノニュースはもちろん、信用できるオンライ<br> ンカジノを比較するのに役立つ場所。 オンカジが大好きなあなた！ ジャパカジの右に出るところはナシっ</div>
 			</div>
 			<div class="about-right">
-				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251" alt="????????">
+				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251" alt="情報画像">
 			</div>
 		</div>
 	</section>
@@ -326,15 +326,15 @@ get_header(); ?>
 						</div>
 					</div>-->
 					<div class="right-info-block">
-						<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-2.webp"></a>
+						<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-2.webp" alt="情報ブロック画像"></a>
 					</div>
 					<div class="right-info-block">
 						<div class="info-block-slider">
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
 						</div>
 					</div>
 				</div>
@@ -354,7 +354,7 @@ get_header(); ?>
 					<h2 class="title">2 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>
@@ -373,7 +373,7 @@ get_header(); ?>
 					<h2 class="title">4 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>
@@ -392,7 +392,7 @@ get_header(); ?>
 					<h2 class="title">6 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>
