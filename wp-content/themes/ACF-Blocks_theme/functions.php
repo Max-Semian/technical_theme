@@ -13,7 +13,6 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 require_once get_template_directory() . '/inc/acf_register_fields.php';
 require_once get_template_directory() . '/inc/acf_register_blocks.php';
-require_once get_template_directory() . '/inc/acf_gutenberg_container_fields.php';
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -175,13 +174,6 @@ function acf_blocks_scripts() {
     // JS files
     wp_enqueue_script('jquery');
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), $asset_version, true);
-    
-    // Gutenberg Container Block Enhancement (только в админке)
-    if (is_admin()) {
-        wp_enqueue_script('gutenberg-container', get_template_directory_uri() . '/assets/js/gutenberg-container.js', array('jquery'), $asset_version, true);
-        // Блоки для редактора Gutenberg
-        wp_enqueue_script('gutenberg-container-blocks', get_template_directory_uri() . '/assets/js/gutenberg-container-blocks.js', array('wp-blocks', 'wp-element', 'wp-editor'), $asset_version, true);
-    }
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
