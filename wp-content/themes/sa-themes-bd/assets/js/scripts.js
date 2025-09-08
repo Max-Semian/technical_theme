@@ -1,5 +1,17 @@
 jQuery(document).ready(function($) {
 	
+	// Кешируем размеры окна для оптимизации производительности
+	var windowWidth = $(window).width();
+	var isDesktop = windowWidth > 1024;
+	var isMobile = windowWidth < 1025;
+	
+	// Обновляем при изменении размера окна
+	$(window).on('resize', function() {
+		windowWidth = $(window).width();
+		isDesktop = windowWidth > 1024;
+		isMobile = windowWidth < 1025;
+	});
+	
 	/* Fix for menu links without href for SEO crawlability */
 	$('a[href="#"][role="button"]').on('click keydown', function(e) {
 		// Prevent default behavior for anchor links
@@ -29,7 +41,8 @@ jQuery(document).ready(function($) {
 	});
 	
 	/* Header меню */
-	if ($(window).width() > 1280) {
+		
+	if (isDesktop && windowWidth > 1280) {
 	    $('.header-menu ul li.menu-item-has-children').on('mouseenter', function() {
 			$('.header-menu ul li.menu-item-has-children').addClass('menuclose');
 			$(this).addClass('menuopen').removeClass('menuclose');
@@ -122,7 +135,7 @@ jQuery(document).ready(function($) {
 		variableWidth: true,
 		swipeToSlide: true
 	});
-	if ($(window).width() < 1025) {
+	if (isMobile) {
 		$('.operator-maket-v2 .operator-right-tabs-buttons').slick({
 			dots: false,
 			speed: 500,
@@ -141,13 +154,20 @@ jQuery(document).ready(function($) {
 		} else {
 			$(this).addClass('open');
 			//$('body, html').css('position','fixed');
-			$('.header-menu-mobile').slideDown('fast');
-			function mobileMenuHeightLi() {
-				$('.header-menu-mobile .nav-menu ul:not(.sub-menu) li').each(function() {
-					var height = $(this).height();
-					$(this).find('.slide-mobile-menu').css('height', height);
-				});
-			} setTimeout(mobileMenuHeightLi, 1000);
+			$('.header-menu-mobile').slideDown('fast', function() {
+				function mobileMenuHeightLi() {
+					var heights = [];
+					// Сначала читаем все высоты
+					$('.header-menu-mobile .nav-menu ul:not(.sub-menu) li').each(function() {
+						heights.push($(this).height());
+					});
+					// Затем применяем их
+					$('.header-menu-mobile .nav-menu ul:not(.sub-menu) li').each(function(i) {
+						$(this).find('.slide-mobile-menu').css('height', heights[i]);
+					});
+				}
+				mobileMenuHeightLi();
+			});
 		}
 	});
 	
@@ -159,87 +179,112 @@ jQuery(document).ready(function($) {
 		}
 	});
 	/* выставляем высоту относительно ширины в карточке */
-	if ($(window).width() < 1025) {
+	if (isMobile) {
+		// Сначала читаем все ширины
+		var cardImageWidths = [];
 		$('.main-block .cards-block .card-item').each(function() {
-			var card_item_width = $(this).find('.card-item-image').width();
-			$(this).find('.card-item-image').css('height',card_item_width+'px');
+			cardImageWidths.push($(this).find('.card-item-image').width());
 		});
+		// Затем применяем высоты
+		$('.main-block .cards-block .card-item').each(function(i) {
+			$(this).find('.card-item-image').css('height', cardImageWidths[i] + 'px');
+		});
+
 		var operator_item_width = $('.info-operator-top .operator-top-image').width();
-		$('.info-operator-top .operator-top-image').css('height',operator_item_width+'px');
+		$('.info-operator-top .operator-top-image').css('height', operator_item_width + 'px');
 	}
 	/* Добавляем класс к заголовку в блоке подписки для мобильных устройств */
-	if ($(window).width() < 1025) {
+	if (isMobile) {
 		$('.main-block .subscribe-block .subscribe-title').addClass('title');
 	}
 	
 	// Авто расстановка заголовков в секции information-block
-	var info_counter = 0;
-	var first_title_info = $('.information-block .information-block-left').find('h2').first().text();
-	$('.information-block .information-block-right .info-block-text-mobile').html(first_title_info);
-	$('.information-block .information-block-left h2').each(function() {
-		var title = $(this).text();
-		$(this).attr('id','info-'+info_counter);
-		$('.information-block .information-block-right').find('.info-block-lists').append('<a href="#info-'+info_counter+'" class="info-block-lists-item">'+title+'</a>');
-		info_counter++;
-	});
-	
-	// Авто расстанновка заголовков в блоке содержимого на странице оператора
-	var operator_counter = 0;
-	$('.operator-page-maket h2').each(function() {
-		var title = $(this).text();
-		$(this).attr('id','info-'+operator_counter);
-		$('.operator-page-maket .right-info-block.operator-page-content').find('.info-block-lists').append('<a href="#info-'+operator_counter+'" class="info-block-lists-item">'+title+'</a>');
-		operator_counter++;
-	});
-	
-	/* Подсвечиваем пункт в блоке содержимого + скролл при нажатии на пункт */
-	const section = $(".main-block .information-block h2");
-    const nav = $(".main-block .information-block .info-block-lists");
+	const section = $(".information-block-maket .left-info-block .info-block-item");
+    const nav = $(".information-block-maket .right-info-block .info-block-lists");
 	const section_operator = $(".operator-page-maket h2");
     const nav_operator = $(".operator-page-maket .right-info-block.operator-page-content .info-block-lists");
 	var otstup = 100;
-	if ($(window).width() < 1025) {
-		otstup = 400;
+	
+	let sectionData = [];
+    let sectionOperatorData = [];
+
+	function calculateSectionData() {
+		otstup = isMobile ? 400 : 100;
+        sectionData = [];
+        section.each(function() {
+            const el = $(this);
+            const top = el.offset().top - otstup;
+            const bottom = top + el.outerHeight();
+            const id = el.attr('id');
+            const activeText = el.find('h2.title').text();
+            sectionData.push({ top, bottom, id, activeText, el });
+        });
+
+        sectionOperatorData = [];
+        section_operator.each(function() {
+			const el = $(this);
+            const top = el.offset().top - otstup;
+            const bottom = top + el.outerHeight();
+            const id = el.attr('id');
+            sectionOperatorData.push({ top, bottom, id });
+        });
 	}
-    $(window).on("scroll", () => {
-        const position = $(this).scrollTop();
-        section.each(function () {
-            const top = $(this).offset().top - otstup,
-                bottom = top + $(this).outerHeight();
-            if (position >= top && position <= bottom) {
+
+	// Debounce function
+	function debounce(func, wait) {
+		let timeout;
+		return function(...args) {
+			const context = this;
+			clearTimeout(timeout);
+			timeout = setTimeout(() => func.apply(context, args), wait);
+		};
+	}
+
+	// Recalculate on resize
+    $(window).on('resize', debounce(calculateSectionData, 250));
+	
+	// Initial calculation
+	calculateSectionData();
+
+
+    function handleScroll() {
+        const position = $(window).scrollTop();
+
+        sectionData.forEach(function (data) {
+            if (position >= data.top && position <= data.bottom) {
                 nav.find('a').removeClass('active');
-                var id_active = $(this).attr('id');
-				if ($(window).width() < 1025) {
-					var active_text = $(this).find('h2.title').text();
-					$(this).parent().parent().find('.info-block-text-mobile').html(active_text);
+                if (isMobile) {
+					data.el.parent().parent().find('.info-block-text-mobile').html(data.activeText);
 				}
-                nav.find('a[href="#'+id_active+'"]').addClass("active");
+                nav.find('a[href="#'+data.id+'"]').addClass("active");
             }
         });
-		section_operator.each(function () {
-            const top = $(this).offset().top - otstup,
-                bottom = top + $(this).outerHeight();
-            if (position >= top && position <= bottom) {
+
+		sectionOperatorData.forEach(function (data) {
+            if (position >= data.top && position <= data.bottom) {
                 nav_operator.find('a').removeClass('active');
-                var id_active_operator = $(this).attr('id');
-				/*if ($(window).width() < 769) {
-					var active_text = $(this).find('h2.title').text();
-					$(this).parent().parent().find('.info-block-text-mobile').html(active_text);
-				}*/
-                nav_operator.find('a[href="#'+id_active_operator+'"]').addClass("active");
+                nav_operator.find('a[href="#'+data.id+'"]').addClass("active");
             }
         });
+    }
+
+    let scrollTimeout;
+    $(window).on("scroll", () => {
+        clearTimeout(scrollTimeout);
+        // Debounce scroll handler to prevent excessive reflows
+        scrollTimeout = setTimeout(handleScroll, 10); 
     });
+
     $('.info-block-lists').find("a").on("click", function (event) {
 		event.preventDefault();
         const id = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(id).offset().top - otstup
-        }, 487);
-        return false;
+        const top = $(id).offset().top - otstup;
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
     });
 	/* Скрываем и показываем содержимое в информационном блоке на мобильном */
-	if ($(window).width() < 1025) {
+	if (isMobile) {
 		$('.info-block-button-mobile').click(function() {
 			if ($(this).hasClass('open')) {
 				$(this).removeClass('open');
@@ -344,7 +389,7 @@ jQuery(document).ready(function($) {
 	
 	/* Работа вкладок на страние оператора v2 */
 	$('.operator-maket-v2 .operator-right-tabs .operator-right-tabs-buttons .operator-right-tabs-button').click(function() {
-		if ($(window).width() > 1024) {
+		if (isDesktop) {
 			var kol_tabs = $(this).parent().children().length,
 				this_id = $(this).attr('id'),
 				sd = this_id.replace(/[^0-9]/gi, ''),
@@ -373,7 +418,7 @@ jQuery(document).ready(function($) {
 	});
 	
 	/* Переносим блок с кнопками на странице оператора для мобильного */
-	if ($(window).width() < 1025) {
+	if (isMobile) {
 		$('.info-operator-top').after($('.info-operator-right-pk'));
 	}
 	
@@ -388,7 +433,7 @@ jQuery(document).ready(function($) {
 	
 	/* Переформируем таблицу pay в мобильной версии */
 	$('.custom-pay-tab').each(function() {
-		if ($(window).width() < 1025) {
+		if (isMobile) {
 			if ($(this).find('thead').length) {
 				var thead_pur = 1;
 			} else {
@@ -433,7 +478,7 @@ jQuery(document).ready(function($) {
 			i = 0;
 			len = arr_body.length;
 			for (i = 0; i < len; i = i + 1) {
-				$(this).next('.custom-pay-tab-mob').find('.custom-pay-tab-mob-contents').append('<div class="custom-pay-tab-mob-content" data-id="'+i+'"></div>');
+				$(this).next('.custom-pay-tab-mob').find('.custom-pay-tab-mob-content').append('<div class="custom-pay-tab-mob-content" data-id="'+i+'"></div>');
 				c = 0;
 				var len_c = arr_body[i].length;
 				for (c = 0; c < len_c; c = c + 1) {

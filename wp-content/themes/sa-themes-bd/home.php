@@ -1,12 +1,12 @@
 <?php
 /*
-* Template Name: Главная
+* Template Name: Глав会
 */
 get_header(); ?>
 <div class="main-block" id="main-content">
 	<section class="main">
-		<div class="main-bg"></div>
-		<div class="main-gorod-bg"></div>
+		<img src="/wp-content/uploads/2025/05/main-bg.webp" alt="" class="main-bg-img" fetchpriority="high" loading="eager">
+		<img src="/wp-content/uploads/2025/05/gorod.svg" alt="都市の背景" class="main-gorod-img" fetchpriority="high" width="1800" height="200">
 		<div class="main-slot-bg"></div>
 		<div class="main-oblaka-bg"></div>
 		<div class="main-container">
@@ -114,7 +114,7 @@ get_header(); ?>
 				<div class="text">オンラインカジノの中でもおすすめのサイト探しや、最新カジノニュースはもちろん、信用できるオンライ<br> ンカジノを比較するのに役立つ場所。 オンカジが大好きなあなた！ ジャパカジの右に出るところはナシっ</div>
 			</div>
 			<div class="about-right">
-				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251" alt="情報画像">
+				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251" alt="情報画像" loading="lazy" decoding="async">
 			</div>
 		</div>
 	</section>
@@ -124,7 +124,9 @@ get_header(); ?>
 			<div class="cards-blocks">
 				<div class="cards-block-left">
 					<div class="card-item top">
-						<div class="card-item-image" style="background-image: url(/wp-content/uploads/2025/05/card-image-1.png);"></div>
+						<div class="card-item-image">
+							<img src="/wp-content/uploads/2025/05/card-image-1.png" alt="K8カジノの評判やボーナスを解説！入出" loading="lazy" decoding="async">
+						</div>
 						<div class="card-item-info">
 							<div class="card-item-info-texts">
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
@@ -162,7 +164,9 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="card-item">
-						<div class="card-item-image" style="background-image: url(/wp-content/uploads/2025/05/cart-item-2.webp);"></div>
+						<div class="card-item-image">
+							<img src="/wp-content/uploads/2025/05/cart-item-2.webp" alt="K8カジノの評判やボーナスを解説！入出" loading="lazy" decoding="async">
+						</div>
 						<div class="card-item-info">
 							<div class="card-item-info-texts">
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
@@ -200,7 +204,9 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="card-item">
-						<div class="card-item-image" style="background-image: url(/wp-content/uploads/2025/05/cart-item-2.webp);"></div>
+						<div class="card-item-image">
+							<img src="/wp-content/uploads/2025/05/cart-item-2.webp" alt="K8カジノの評判やボーナスを解説！入出" loading="lazy" decoding="async">
+						</div>
 						<div class="card-item-info">
 							<div class="card-item-info-texts">
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
@@ -238,45 +244,9 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="card-item">
-						<div class="card-item-image" style="background-image: url(/wp-content/uploads/2025/05/cart-item-2.webp);"></div>
-						<div class="card-item-info">
-							<div class="card-item-info-texts">
-								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
-								<div class="card-item-rating">
-									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
-								</div>
-								<div class="card-item-tags">
-									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
-									<div class="card-item-tags-item">最高$100まで100% + 100 FS</div>
-								</div>
-								<div class="card-item-lists">
-									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
-										<div class="card-item-lists-text">日本円使用可</div>
-									</div>
-									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
-										<div class="card-item-lists-text">日本語サポート</div>
-									</div>
-									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
-										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
-									</div>
-								</div>
-							</div>
-							<div class="card-item-info-buttons">
-								<div class="card-item-buttons-promocode">
-									プロモコード<br>
-									<span class="promocode">BDBET</span>
-								</div>
-								<a href="#" class="card-item-buttons-link" target="_blank">ボーナスを受け取る</a>
-							<a href="#" class="card-item-buttons-reviews" target="_blank">レビューを読む</a>
-							</div>
+						<div class="card-item-image">
+							<img src="/wp-content/uploads/2025/05/cart-item-2.webp" alt="K8カジノの評判やボーナスを解説！入出" loading="lazy" decoding="async">
 						</div>
-					</div>
-					<div class="card-item">
-						<div class="card-item-image" style="background-image: url(/wp-content/uploads/2025/05/cart-item-2.webp);"></div>
 						<div class="card-item-info">
 							<div class="card-item-info-texts">
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
@@ -326,15 +296,15 @@ get_header(); ?>
 						</div>
 					</div>-->
 					<div class="right-info-block">
-						<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-2.webp" alt="情報ブロック画像"></a>
+						<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-2.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
 					</div>
 					<div class="right-info-block">
 						<div class="info-block-slider">
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
-							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
+							<a href="#" target="_blank"><img src="/wp-content/uploads/2025/05/info-block-3.webp" alt="情報ブロック画像" loading="lazy" decoding="async"></a>
 						</div>
 					</div>
 				</div>
@@ -354,7 +324,7 @@ get_header(); ?>
 					<h2 class="title">2 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像" loading="lazy" decoding="async">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>
@@ -373,7 +343,7 @@ get_header(); ?>
 					<h2 class="title">4 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像" loading="lazy" decoding="async">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>
@@ -392,7 +362,7 @@ get_header(); ?>
 					<h2 class="title">6 電子ウォレットはオンラインカジノの支払いに最適</h2>
 					<div class="information-block-img-text">
 						<div class="information-block-image">
-							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像">
+							<img src="/wp-content/uploads/2025/05/information-image.webp" alt="情報画像" loading="lazy" decoding="async">
 						</div>
 						<div class="information-block-text">
 							<p>、カジノ運営者たちと直に交渉・調査をしているので、情報が最速で確実💨 ぜーんぶ『本音』でお届けしていますっ！</p>

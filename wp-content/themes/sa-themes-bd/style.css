@@ -35,7 +35,7 @@ p a, li a, span a {
 /* Шрифты */
 @font-face { font-family: 'Noto Sans'; src: url('assets/font/NotoSans.ttf'); font-display: swap; }
 @font-face { font-family: 'Bungee'; src: url('assets/font/Bungee.ttf'); font-display: swap; }
-body, html { font-family: 'Noto Sans'; margin: 0; width: 100%; }
+body, html { font-family: 'Noto Sans', Arial, sans-serif; margin: 0; width: 100%; }
 
 /* Global */
 h3 { font-size: 26px; line-height: 150%; font-weight: 600; color: #E7370A; }
@@ -128,8 +128,18 @@ header { background-color: #fff; max-width: 1600px; margin: 0 auto; position: re
 .main-block { margin: 0 auto; }
 /* Секция main - блок "Главный блок" */
 section.main { width: 100%; min-height: 722px; position: relative; overflow-x: hidden; }
-section.main .main-bg { position: absolute; background-image: url(/wp-content/uploads/2025/05/main-bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center bottom 30%; left: 0; top: 0; width: 100%; height: 100%; z-index: 0; }
+section.main .main-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    z-index: 0;
+}
 section.main .main-gorod-bg { position: absolute; left: 0; top: 0; background-image: url(/wp-content/uploads/2025/05/gorod.svg); background-repeat: repeat-x; width: 100%; height: 100%; z-index: 1; background-size: 1800px; background-position: bottom center; }
+section.main .main-gorod-img { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; z-index: 1; object-fit: cover; object-position: bottom center; }
 section.main .main-slot-bg { position: absolute; left: 250px; top: 0; background-image: url(/wp-content/uploads/2025/05/slot.webp); background-repeat: no-repeat; width: 100%; height: 100%; z-index: 2; background-size: 548px; background-position: top 93% center; }
 section.main .main-oblaka-bg { position: absolute; left: 0; top: 0; background-image: url(/wp-content/uploads/2025/05/oblaka.svg); background-repeat: no-repeat; width: 100%; height: 100%; z-index: 3; background-size: cover; background-position: bottom -20px center; }
 section.main .main-container { display: flex; gap: 50px; justify-content: space-between; max-width: 1520px; padding: 0 40px; margin: 0 auto; position: relative; z-index: 4; }
@@ -162,7 +172,20 @@ section.cards-block .cards-block-left { width: 100%; }
 section.cards-block .cards-block-right { min-width: 365px; max-width: 365px; width: 365px; align-self: flex-start; position: sticky; top: 30px; }
 section.cards-block .cards-block-left .card-item { padding: 10px; background-color: #fff; border-radius: 15px; box-shadow: 0 8px 0 0 #EFEFEF; display: flex; gap: 20px; justify-content: space-between; position: relative; margin-bottom: 30px; }
 section.cards-block .cards-block-left .card-item.top:after { content: ''; width: 95px; height: 95px; background-image: url(/wp-content/uploads/2025/07/card-top.webp); background-repeat: no-repeat; background-size: contain; position: absolute; left: -22px; top: 45px; }
-section.cards-block .card-item .card-item-image { width: 275px; height: 275px; min-width: 275px; border-radius: 10px; background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 10px; }
+section.cards-block .card-item .card-item-image {
+    width: 275px;
+    height: 275px;
+    min-width: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section.cards-block .card-item .card-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
 section.cards-block .card-item .card-item-info { padding: 10px; display: flex; gap: 20px; justify-content: space-between; width: 100%; }
 section.cards-block .card-item .cards-item-href { text-decoration: none; }
 section.cards-block .card-item-info-texts .card-item-rating { margin-top: 15px; display: flex; gap: 10px; align-items: center; }

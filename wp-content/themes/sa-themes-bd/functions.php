@@ -1,22 +1,50 @@
 <?php
+// Безопасная обертка для get_lzb_meta() на случай отсутствия плагина Lazy Blocks
+if (!function_exists('get_lzb_meta_safe')) {
+    function get_lzb_meta_safe($key, $post_id = null) {
+        if (function_exists('get_lzb_meta')) {
+            return get_lzb_meta($key, $post_id);
+        }
+        return false; // Возвращаем false если плагин не установлен
+    }
+}
+
 // Подключаем стили и скрипты
 function tgg_scripts() {
-	//wp_deregister_style('wp-block-library');
-	wp_enqueue_style('style', get_stylesheet_uri());
-	wp_enqueue_style('slick', get_stylesheet_directory_uri().'/assets/css/slick.css');
-	wp_enqueue_style('slick-theme', get_stylesheet_directory_uri().'/assets/css/slick-theme.css');
-	wp_enqueue_style('fancybox', get_stylesheet_directory_uri().'/assets/css/fancybox.css');
-	wp_deregister_script('jquery');
-    wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), array(), null, true);  
+	// Отключаем стандартные WordPress стили
+	wp_deregister_style('wp-block-library');
+	wp_deregister_style('wp-block-library-theme');
+	wp_deregister_style('wc-blocks-style');
+	wp_deregister_style('global-styles');
+	
+	// CSS загружается через preload в optimize_main_css()
+	
+	// Оптимизированная загрузка JavaScript
 	wp_enqueue_script('jquery');
-	wp_register_script('slick-script', get_stylesheet_directory_uri().'/assets/js/slick.js', array('jquery'), false, true);
-	wp_enqueue_script('slick-script');
-	wp_register_script('fancybox-script', get_stylesheet_directory_uri().'/assets/js/fancybox.js', array('jquery'), false, true);
-	wp_enqueue_script('fancybox-script');
-	wp_register_script('scripts-script', get_stylesheet_directory_uri().'/assets/js/scripts.js', array('jquery', 'slick-script'), false, array('in_footer' => true, 'strategy' => 'async'));
-	wp_enqueue_script('scripts-script');
+	
+	wp_enqueue_script('slick-script', get_stylesheet_directory_uri().'/assets/js/slick.js', array('jquery'), null, true);
+	wp_enqueue_script('fancybox-script', get_stylesheet_directory_uri().'/assets/js/fancybox.js', array('jquery'), null, true);
+	wp_enqueue_script('scripts-script', get_stylesheet_directory_uri().'/assets/js/scripts.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'tgg_scripts');
+
+// Откладываем загрузку JS для ускорения рендеринга
+function add_defer_attributes( $tag, $handle ) {
+    $scripts_to_defer = array(
+        'jquery-core',
+        'jquery-migrate',
+        'slick-script',
+        'fancybox-script',
+        'scripts-script'
+    );
+
+    if ( in_array( $handle, $scripts_to_defer ) ) {
+        return str_replace( ' src', ' defer src', $tag );
+    }
+    
+    return $tag;
+}
+add_filter( 'script_loader_tag', 'add_defer_attributes', 10, 2 );
 // Подключаем стили для админки
 function wph_add_css_file_admin() {
 	wp_enqueue_style('mystyle-admin', get_stylesheet_uri());
@@ -185,12 +213,12 @@ function cards_section_function($atts) {
 		setup_postdata($post);
 ?>
 		<div class="card-item<?php if ($first_item == true) { ?> top<?php } ?>">
-			<div class="card-item-image" style="background-color: grey; <?php if (get_lzb_meta('image')) { ?>background-image: url(<?php echo get_lzb_meta('image')['url']; ?>); <?php } ?>"></div>
+			<div class="card-item-image" style="background-color: grey; <?php if (get_lzb_meta_safe('image')) { ?>background-image: url(<?php echo get_lzb_meta_safe('image')['url']; ?>); <?php } ?>"></div>
 			<div class="card-item-info">
 				<div class="card-item-info-texts">
 					<a href="<?php echo get_permalink(); ?>" target="_blank" class="cards-item-href"><h3 class="title"><?php echo get_the_title(); ?></h3></a>
 					<div class="card-item-rating">
-						<?php $rating = get_lzb_meta('rating');
+						<?php $rating = get_lzb_meta_safe('rating');
 						if ($rating) {
 			  				$ball = $rating * 106 / 5; ?>
 							<div class="card-rating-number"><?php echo round($rating, 2); ?></div>
@@ -198,28 +226,28 @@ function cards_section_function($atts) {
 						<?php } ?>
 					</div>
 					<div class="card-item-tags">
-						<?php foreach (get_lzb_meta('sa_tags') as $item) { ?>
+						<?php $sa_tags = get_lzb_meta_safe('sa_tags'); if ($sa_tags) { foreach ($sa_tags as $item) { ?>
 							<div class="card-item-tags-item"><?php echo $item['text']; ?></div>
-						<?php } ?>
+						<?php } } ?>
 					</div>
 					<div class="card-item-lists">
-						<?php foreach (get_lzb_meta('advantages') as $item) { ?>
+						<?php $advantages = get_lzb_meta_safe('advantages'); if ($advantages) { foreach ($advantages as $item) { ?>
 							<div class="cart-item-lists-item">
 								<div class="card-item-lists-icon"><img src="<?php echo $item['icon']['url']; ?>" alt="<?php echo !empty($item['icon']['alt']) ? $item['icon']['alt'] : $item['text']; ?>"></div>
 								<div class="card-item-lists-text"><?php echo $item['text']; ?></div>
 			 				</div>
-						<?php } ?>
+						<?php } } ?>
 					</div>
 				</div>
 				<div class="card-item-info-buttons">
-					<?php if (get_lzb_meta('sa_promocode')) { ?>
+					<?php if (get_lzb_meta_safe('sa_promocode')) { ?>
 						<div class="card-item-buttons-promocode">
-							<?php echo get_lzb_meta('text_promocode_button'); ?><br>
-							<span class="promocode"><?php echo get_lzb_meta('sa_promocode'); ?></span>
+							<?php echo get_lzb_meta_safe('text_promocode_button'); ?><br>
+							<span class="promocode"><?php echo get_lzb_meta_safe('sa_promocode'); ?></span>
 						</div>
 					<?php }
-					if (get_lzb_meta('link_button_bonus')) { ?>
-						<a href="<?php echo get_lzb_meta('link_button_bonus'); ?>" class="card-item-buttons-link" target="_blank"><?php echo get_lzb_meta('text_button_bonus'); ?></a>
+					if (get_lzb_meta_safe('link_button_bonus')) { ?>
+						<a href="<?php echo get_lzb_meta_safe('link_button_bonus'); ?>" class="card-item-buttons-link" target="_blank"><?php echo get_lzb_meta_safe('text_button_bonus'); ?></a>
 					<?php } ?>
 					<a href="<?php echo get_permalink(); ?>" class="card-item-buttons-reviews" target="_blank">レビューを読</a>
 				</div>
@@ -471,3 +499,178 @@ function add_canonical_if_missing() {
     }
 }
 add_action('wp_head', 'add_canonical_if_missing', 5);
+
+// Preload LCP изображения для ускорения загрузки
+function preload_lcp_image() {
+    if (is_front_page()) {
+        // Правильное LCP изображение - gorod.svg с высшим приоритетом
+        echo '<link rel="preload" href="/wp-content/uploads/2025/05/gorod.svg" as="image" fetchpriority="high" crossorigin>';
+        echo '<link rel="preload" href="/wp-content/uploads/2025/05/main-bg.webp" as="image" fetchpriority="low">';
+        
+        // Preload критических шрифтов с ограничением размера
+        echo '<link rel="preload" href="' . get_stylesheet_directory_uri() . '/assets/font/NotoSans.ttf" as="font" type="font/ttf" crossorigin>';
+        
+        // Отложенная загрузка декоративного шрифта
+        echo '<link rel="dns-prefetch" href="' . get_stylesheet_directory_uri() . '/assets/font/">';
+    }
+}
+add_action('wp_head', 'preload_lcp_image', 1);
+
+// Критический CSS для LCP элемента
+function add_critical_css() {
+    if (is_front_page()) {
+        echo '<style id="critical-lcp">
+        body,html{font-family:Arial,sans-serif;margin:0;width:100%;line-height:1.4}
+        .main{position:relative;min-height:722px;contain:layout style paint;will-change:transform}
+        .main-bg{position:absolute;background-image:url(/wp-content/uploads/2025/05/main-bg.webp);background-size:cover;background-position:center bottom 30%;left:0;top:0;width:100%;height:100%;z-index:0;contain:strict}
+        .main-gorod-img{position:absolute;left:0;bottom:0;width:100%;height:auto;z-index:1;object-fit:cover;object-position:bottom center;contain:layout}
+        .main-container{position:relative;z-index:4;max-width:1520px;margin:0 auto;padding:0 40px}
+        .title{font-family:Arial,sans-serif;font-size:2rem;margin:0 0 1rem 0}
+        h1,h2,h3{margin:0 0 1rem 0;line-height:1.2}
+        </style>';
+    }
+}
+add_action('wp_head', 'add_critical_css', 2);
+
+// Добавляем resource hints для оптимизации загрузки
+function add_resource_hints() {
+    // Preconnect к собственному домену
+    echo '<link rel="preconnect" href="' . home_url() . '" crossorigin>';
+    echo '<link rel="dns-prefetch" href="' . home_url() . '">';
+    
+    // Preconnect для внешних ресурсов если есть
+    echo '<link rel="dns-prefetch" href="//fonts.googleapis.com">';
+    echo '<link rel="dns-prefetch" href="//www.google-analytics.com">';
+}
+add_action('wp_head', 'add_resource_hints', 0);
+
+// Оптимизация загрузки основных стилей
+function optimize_main_css() {
+    if (is_front_page()) {
+        // Только критический CSS загружается синхронно через inline стили выше
+        // Основной CSS загружается асинхронно
+        echo '<link rel="preload" href="' . get_stylesheet_uri() . '" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" importance="low">';
+        echo '<noscript><link rel="stylesheet" href="' . get_stylesheet_uri() . '"></noscript>';
+        
+        // Отложенная загрузка некритических CSS
+        echo '<link rel="preload" href="' . get_stylesheet_directory_uri() . '/assets/css/slick.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" importance="low">';
+        echo '<link rel="preload" href="' . get_stylesheet_directory_uri() . '/assets/css/slick-theme.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" importance="low">';
+        echo '<link rel="preload" href="' . get_stylesheet_directory_uri() . '/assets/css/fancybox.css" as="style" onload="this.onload=null;this.rel=\'stylesheet\'" importance="low">';
+    }
+}
+add_action('wp_head', 'optimize_main_css', 3);
+
+// Оптимизация изображений для лучшей производительности
+function optimize_images_performance($content) {
+    if (is_admin()) {
+        return $content;
+    }
+    
+    // Добавляем loading="lazy" ко всем изображениям кроме первого (LCP)
+    $content = preg_replace_callback(
+        '/<img([^>]*?)>/i',
+        function($matches) {
+            static $first_image = true;
+            $img_tag = $matches[0];
+            
+            // Первое изображение - не делаем lazy
+            if ($first_image) {
+                $first_image = false;
+                return $img_tag;
+            }
+            
+            // Остальные изображения - lazy loading
+            if (strpos($img_tag, 'loading=') === false) {
+                $img_tag = str_replace('<img', '<img loading="lazy"', $img_tag);
+            }
+            
+            // Добавляем декодирование async
+            if (strpos($img_tag, 'decoding=') === false) {
+                $img_tag = str_replace('<img', '<img decoding="async"', $img_tag);
+            }
+            
+            return $img_tag;
+        },
+        $content
+    );
+    
+    return $content;
+}
+add_filter('the_content', 'optimize_images_performance', 5);
+
+// Удаление неиспользуемых WordPress функций
+function remove_wp_bloat() {
+    // Отключаем WordPress REST API если не нужен
+    remove_action('wp_head', 'rest_output_link_wp_head');
+    remove_action('wp_head', 'wp_oembed_add_discovery_links');
+    
+    // Убираем генератор WordPress
+    remove_action('wp_head', 'wp_generator');
+    
+    // Отключаем RSD link
+    remove_action('wp_head', 'rsd_link');
+    
+    // Отключаем wlwmanifest link
+    remove_action('wp_head', 'wlwmanifest_link');
+    
+    // Убираем shortlink
+    remove_action('wp_head', 'wp_shortlink_wp_head');
+}
+add_action('init', 'remove_wp_bloat');
+
+// Минификация HTML вывода для уменьшения размера
+function minify_html_output($buffer) {
+    if (is_admin()) {
+        return $buffer;
+    }
+    
+    // Удаляем лишние пробелы и переносы строк
+    $buffer = preg_replace('/\s+/', ' ', $buffer);
+    $buffer = preg_replace('/>\s+</', '><', $buffer);
+    
+    // Удаляем комментарии HTML (кроме IE conditional)
+    $buffer = preg_replace('/<!--(?!\s*(?:\[if [^\]]+]|<!|>))(?:(?!-->).)*-->/s', '', $buffer);
+    
+    return trim($buffer);
+}
+
+// Включаем минификацию только на фронтенде
+function start_html_minify() {
+    if (!is_admin()) {
+        ob_start('minify_html_output');
+    }
+}
+add_action('wp_loaded', 'start_html_minify');
+
+// Оптимизация базы данных запросов
+function optimize_database_queries() {
+    // Отключаем ревизии постов для экономии места
+    if (!defined('WP_POST_REVISIONS')) {
+        define('WP_POST_REVISIONS', 3);
+    }
+    
+    // Увеличиваем интервал автосохранения
+    if (!defined('AUTOSAVE_INTERVAL')) {
+        define('AUTOSAVE_INTERVAL', 300); // 5 минут
+    }
+}
+add_action('init', 'optimize_database_queries');
+
+function my_custom_preload() {
+    // Preconnect to external domain
+    echo '<link rel="preconnect" href="https://katsuoncasi.com" crossorigin>';
+    
+    // Preload critical plugin CSS
+    $plugin_css_url = 'https://katsuoncasi.com/wp-content/plugins/kinvel/kinvel.css?ver=6.8.2';
+    echo '<link rel="preload" href="' . esc_url( $plugin_css_url ) . '" as="style">';
+	echo '<link rel="stylesheet" href="' . esc_url( $plugin_css_url ) . '" media="print" onload="this.media=\'all\'">';
+	echo '<noscript><link rel="stylesheet" href="' . esc_url( $plugin_css_url ) . '"></noscript>';
+}
+add_action('wp_head', 'my_custom_preload', 1);
+
+// Dequeue the original plugin stylesheet to prevent double loading
+function dequeue_kinvel_style() {
+    wp_dequeue_style('kinvel-style');
+    wp_deregister_style('kinvel-style');
+}
+add_action('wp_print_styles', 'dequeue_kinvel_style', 100);
