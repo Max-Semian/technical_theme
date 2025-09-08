@@ -1,0 +1,23 @@
+.dgYvuo4SPB7iJTvwdKqA label{margin-bottom:0}.UmSE2k_HSA75GHz8g2hh.CJvFTsLOb0iWBxV3V3l5,.UmSE2k_HSA75GHz8g2hh:disabled,.hm_U2TKdAiPMZ3zPD5YZ.CJvFTsLOb0iWBxV3V3l5,.hm_U2TKdAiPMZ3zPD5YZ:disabled{cursor:not-allowed;opacity:.5}
+
+/* --- FORCE GRID FOR MAIN BANNER ON DESKTOP --- */
+@media (min-width: 1024px) {
+  /* повышаем специфичность, перебиваем flex у Swiper */
+  .swiper-slider .swiper-wrapper.slider-wrapper,
+  .swiper-wrapper.slider-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+  .swiper-wrapper.slider-wrapper .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    flex: 0 0 auto !important; /* на случай, если Swiper оставил flex-basis */
+  }
+  .swiper-slider .swiper-pagination { display: none !important; }
+}
+.flex-1 {
+  display: none;
+}

@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "acf-blocks-theme/recommended-pages",
+    "version": "1.0.0",
+    "title": "Recommended Pages Block",
+    "description": "Сетка промо-карточек рекомендуемых страниц (2x3 на десктопе, 1x5 на мобиле)",
+    "category": "casino-theme",
+    "icon": "grid-view",
+    "keywords": ["recommended", "pages", "promo", "cards", "grid", "landing"],
+    "textdomain": "acf-blocks-theme",
+    "render": "file:./render.php",
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true,
+        "customClassName": true,
+        "reusable": true,
+        "multiple": true,
+        "inserter": true,
+        "lock": false,
+        "color": {
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "blockTitle": {
+            "type": "string",
+            "default": "Рекомендуемые страницы"
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#0B0F18"
+        },
+        "recommendedPages": {
+            "type": "array",
+            "default": [
+                {
+                    "title": "Sports Betting",
+                    "backgroundImage": "",
+                    "imageId": 0,
+                    "url": "#",
+                    "gradientOverlay": "linear-gradient(135deg, rgba(62, 242, 209, 0.8) 0%, rgba(49, 16, 103, 0.8) 100%)"
+                },
+                {
+                    "title": "Casino Games",
+                    "backgroundImage": "",
+                    "imageId": 0,
+                    "url": "#",
+                    "gradientOverlay": "linear-gradient(135deg, rgba(242, 62, 143, 0.8) 0%, rgba(16, 103, 49, 0.8) 100%)"
+                },
+                {
+                    "title": "Take the bonuses",
+                    "backgroundImage": "",
+                    "imageId": 0,
+                    "url": "#",
+                    "gradientOverlay": "linear-gradient(135deg, rgba(242, 206, 62, 0.8) 0%, rgba(103, 16, 49, 0.8) 100%)"
+                },
+                {
+                    "title": "Live Games",
+                    "backgroundImage": "",
+                    "imageId": 0,
+                    "url": "#",
+                    "gradientOverlay": "linear-gradient(135deg, rgba(62, 143, 242, 0.8) 0%, rgba(103, 49, 16, 0.8) 100%)"
+                },
+                {
+                    "title": "Mobile App",
+                    "backgroundImage": "",
+                    "imageId": 0,
+                    "url": "#",
+                    "gradientOverlay": "linear-gradient(135deg, rgba(143, 62, 242, 0.8) 0%, rgba(49, 103, 16, 0.8) 100%)"
+                }
+            ]
+        }
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "editorStyle": "file:./editor.css",
+    "script": "file:./script.js"
+}

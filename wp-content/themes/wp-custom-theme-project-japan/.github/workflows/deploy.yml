@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Connect to host
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          port: ${{ secrets.SSH_PORT }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASS }}
+          script: bash ${{ vars.SCRIPT_PATH }}
+          script_stop: true

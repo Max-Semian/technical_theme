@@ -1,0 +1,218 @@
+/* Popular Slots Block Editor Styles */
+.wp-block-acf-blocks-theme-popular-slots,
+.popular-slots-block {
+    background-color: #0B0F18 !important;
+    padding: 40px 20px !important;
+    border-radius: 20px !important;
+    border: 2px solid #B6BBD4 !important;
+    overflow: hidden !important;
+    min-height: 500px !important;
+}
+
+.popular-slots-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.popular-slots-title {
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    color: #EAECFC !important;
+    text-align: left !important;
+    margin: 0 0 30px 0 !important;
+    line-height: 1.2 !important;
+}
+
+.popular-slots-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+    min-height: 400px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.popular-slot-item {
+    background-color: #1a1d29 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    text-align: center !important;
+    color: #ffffff !important;
+    min-height: 200px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    border: 1px solid rgba(182, 187, 212, 0.1) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Стили для изображений в превью редактора */
+.popular-slot-image {
+    width: 100% !important;
+    height: 120px !important;
+    margin-bottom: 12px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    background-color: #2a2d39 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.popular-slot-item img.slot-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    display: block !important;
+}
+
+.popular-slot-item .slot-image-placeholder {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #2a2d39 !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #888 !important;
+    font-size: 48px !important;
+}
+
+.popular-slot-item .slot-image-placeholder small {
+    font-size: 10px !important;
+    margin-top: 4px !important;
+    opacity: 0.7 !important;
+}
+
+.popular-slot-item h3 {
+    font-size: 16px;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.popular-slot-item .slot-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.popular-slot-item .slot-buttons button {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.popular-slot-item .slot-btn-demo {
+    border: 1px solid #007cba;
+    background-color: transparent;
+    color: #007cba;
+}
+
+.popular-slot-item .slot-btn-play {
+    border: none;
+    background-color: #007cba;
+    color: #ffffff;
+}
+
+/* Editor specific adjustments */
+.block-editor-block-list__block .popular-slots-block {
+    margin: 20px 0;
+}
+
+.block-editor-block-list__block .popular-slot-item {
+    pointer-events: none; /* Prevent clicking in editor */
+}
+
+/* Inspector Controls Styling */
+.components-panel__body .components-base-control {
+    margin-bottom: 16px;
+}
+
+.components-panel__body .components-base-control__label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Media Upload Button Styling */
+.components-button.is-primary {
+    background-color: #007cba;
+    border-color: #007cba;
+}
+
+.components-button.is-secondary {
+    color: #007cba;
+    border-color: #007cba;
+}
+
+.components-button.is-destructive {
+    color: #cc1818;
+    border-color: #cc1818;
+}
+
+.components-button.is-destructive:hover {
+    background-color: #cc1818;
+    color: #ffffff;
+}
+
+/* Image preview styling in inspector */
+.components-panel__body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* Mobile adaptation for editor */
+@media (max-width: 768px) {
+    .popular-slots-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+        gap: 16px !important;
+    }
+    
+    .popular-slot-item {
+        min-height: 160px !important;
+        padding: 12px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .popular-slots-title {
+        font-size: 24px !important;
+    }
+    
+    .popular-slots-block {
+        padding: 20px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .popular-slots-grid {
+        gap: 12px !important;
+    }
+    
+    .popular-slot-item {
+        min-height: 140px !important;
+        padding: 10px !important;
+    }
+    
+    .popular-slots-title {
+        font-size: 20px !important;
+    }
+    
+    .popular-slots-block {
+        padding: 15px 10px !important;
+    }
+}

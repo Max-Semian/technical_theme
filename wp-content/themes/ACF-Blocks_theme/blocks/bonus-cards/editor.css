@@ -1,0 +1,111 @@
+/* Bonus Cards Block Editor Styles */
+.bonus-cards-block .bonus-cards-container {
+    border: 2px solid #B6BBD4;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+.bonus-cards-block .bonus-cards-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #311067;
+    text-align: left;
+    margin: 28px 0 20px 0;
+    line-height: 1.2;
+}
+
+.bonus-cards-block .bonus-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.bonus-cards-block .bonus-card-item.editor-preview {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 200px;
+    transition: none;
+}
+
+.bonus-cards-block .bonus-card-item.editor-preview:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bonus-cards-block .bonus-card-image-container {
+    height: 120px;
+    background: #f5f5f5;
+    position: relative;
+}
+
+.bonus-cards-block .bonus-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bonus-cards-block .bonus-card-image-placeholder {
+    background: #f0f0f0;
+    color: #999;
+    font-size: 2rem;
+}
+
+.bonus-cards-block .bonus-card-status {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #2cd8b9;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.bonus-cards-block .bonus-card-content {
+    padding: 15px;
+}
+
+.bonus-cards-block .bonus-card-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Responsive в редакторе */
+@media (max-width: 1024px) {
+    .bonus-cards-block .bonus-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bonus-cards-block .bonus-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .bonus-cards-block .bonus-card-item.editor-preview {
+        min-height: 180px;
+    }
+    
+    .bonus-cards-block .bonus-card-image-container {
+        height: 100px;
+    }
+    
+    .bonus-cards-block .bonus-card-content {
+        padding: 10px;
+    }
+    
+    .bonus-cards-block .bonus-card-title {
+        font-size: 13px;
+    }
+}

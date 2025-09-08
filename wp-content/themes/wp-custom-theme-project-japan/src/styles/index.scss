@@ -1,0 +1,110 @@
+// fonts
+@import "fonts";
+
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main,
+.wp-block-post-content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	h1 a,
+	h2 a,
+	h3 a,
+	h4 a,
+	h5 a,
+	h6 a {
+		-webkit-backface-visibility: hidden;
+	}
+
+	h1,
+	h1 a {
+		font-size: 3.157em;
+		line-height: 1.2em;
+	}
+
+	h2,
+	h2 a {
+		font-size: 2.369em;
+		line-height: 1.2em;
+	}
+
+	h3,
+	h3 a {
+		font-size: 1.777em;
+		line-height: 1.2em;
+	}
+
+	h4,
+	h4 a {
+		font-size: 1.333em;
+		line-height: 1.2em;
+	}
+
+	h5,
+	h5 a {
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+
+	h6,
+	h6 a {
+		font-size: 0.75em;
+		line-height: 1.2em;
+	}
+
+	a {
+		transition-duration: 0.2s;
+	}
+
+	// .ez-toc-list ul li::before {
+	// 	content: none;
+	// }
+}
+
+.main-blocks {
+	.wp-block-table thead {
+		border-bottom: none;
+	}
+}
+
+.main-blocks,
+.wp-block-post-content {
+	ul,
+	ol {
+		padding-left: 32px;
+
+		li {
+			position: relative;
+			padding-left: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	ol {
+		list-style: decimal;
+	}
+}
+
+.main-blocks ul:not([class*="ez-toc-list"]) li::before,
+.wp-block-post-content ul li::before {
+	position: absolute;
+	top: 3px;
+	left: -13px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	content: "";
+}
+
+// We need to have a .editor-style-wrapper or .wp-block selector inside the css file so
+// the file will be enqueued inside the iframe - fucking wordpress
+.wp-block {
+	opacity: 1;
+}

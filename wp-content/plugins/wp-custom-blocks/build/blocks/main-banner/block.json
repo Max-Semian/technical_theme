@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/banner",
+  "version": "0.1.2",
+  "title": "Main banner",
+  "category": "wp-custom-blocks",
+  "description": "Main banner",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "banner-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./index.css",
+  "viewScript": [
+    "file:./swiper.js",
+    "file:./init-banner-sliders.js"
+  ],
+  "viewStyle": [
+    "file:./index.css",
+    "file:./swiper-styles.css"
+  ]
+}

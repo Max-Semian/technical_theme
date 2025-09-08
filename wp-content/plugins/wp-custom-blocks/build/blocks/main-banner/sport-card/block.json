@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/sport-card",
+  "version": "0.1.2",
+  "title": "Banner sport card",
+  "category": "wp-custom-blocks",
+  "description": "Banner sport card",
+  "parent": [
+    "wp-custom-blocks/banner"
+  ],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "sport-card",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./index.css"
+}

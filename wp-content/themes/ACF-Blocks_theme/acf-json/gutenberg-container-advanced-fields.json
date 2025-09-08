@@ -1,0 +1,239 @@
+[
+    {
+        "key": "group_gutenberg_container_advanced",
+        "title": "Расширенный контейнер Gutenberg",
+        "fields": [
+            {
+                "key": "field_container_title_adv",
+                "label": "Заголовок контейнера",
+                "name": "container_title",
+                "type": "text",
+                "instructions": "Заголовок будет отображен над содержимым контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Введите заголовок",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_background_color_adv",
+                "label": "Цвет фона",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "Выберите цвет фона для контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_padding_adv",
+                "label": "Размер отступов",
+                "name": "padding",
+                "type": "select",
+                "instructions": "Выберите размер внутренних отступов",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "small": "Маленькие",
+                    "medium": "Средние",
+                    "large": "Большие"
+                },
+                "default_value": "medium",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_container_type_adv",
+                "label": "Тип контейнера",
+                "name": "container_type",
+                "type": "select",
+                "instructions": "Выберите визуальный стиль контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "Обычный",
+                    "card": "Карточка",
+                    "section": "Секция"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_show_block_count",
+                "label": "Показать счетчик блоков",
+                "name": "show_block_count",
+                "type": "true_false",
+                "instructions": "Показать количество блоков в заголовке (только в админке)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_restrict_blocks",
+                "label": "Ограничить типы блоков",
+                "name": "restrict_blocks",
+                "type": "true_false",
+                "instructions": "Включить ограничение на типы блоков, которые можно добавлять",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_max_blocks",
+                "label": "Максимальное количество блоков",
+                "name": "max_blocks",
+                "type": "number",
+                "instructions": "Максимальное количество блоков, которое можно добавить (0 = без ограничений)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": 50,
+                "step": 1
+            },
+            {
+                "key": "field_allowed_block_types",
+                "label": "Разрешенные типы блоков",
+                "name": "allowed_block_types",
+                "type": "checkbox",
+                "instructions": "Выберите типы блоков, которые можно добавлять в контейнер",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_restrict_blocks",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "core\/paragraph": "Абзац",
+                    "core\/heading": "Заголовок",
+                    "core\/image": "Изображение",
+                    "core\/gallery": "Галерея",
+                    "core\/list": "Список",
+                    "core\/quote": "Цитата",
+                    "core\/button": "Кнопка",
+                    "core\/buttons": "Кнопки",
+                    "core\/columns": "Колонки",
+                    "core\/group": "Группа",
+                    "core\/spacer": "Разделитель",
+                    "acf\/promo-block": "Промо блок",
+                    "acf\/nav-block": "Навигационный блок",
+                    "acf\/game-block": "Блок игр",
+                    "acf\/advice-block": "Блок советов",
+                    "acf\/news-block": "Блок новостей",
+                    "acf\/bonuses-block": "Блок бонусов",
+                    "acf\/faq-block": "FAQ блок"
+                },
+                "allow_custom": 0,
+                "default_value": [],
+                "layout": "vertical",
+                "toggle": 0,
+                "return_format": "value",
+                "save_custom": 0
+            },
+            {
+                "key": "field_css_class_adv",
+                "label": "Дополнительные CSS классы",
+                "name": "css_class",
+                "type": "text",
+                "instructions": "Добавьте дополнительные CSS классы для кастомизации",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "custom-class another-class",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/gutenberg-container-advanced"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Расширенные поля для настройки контейнера Gutenberg блоков"
+    }
+]

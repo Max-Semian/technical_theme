@@ -1,0 +1,963 @@
+@media screen and (max-width: 1370px) {
+  .container.VQMJHWuociCCg {
+    padding: 0 10px;
+  }
+
+  .header .main-menu-desc > li > a,
+  .header .main-menu-desc > li > span {
+    padding: 0 8px;
+    font-size: 16px;
+  }
+
+  .header .main-menu-desc > li.has-submenu > span {
+    padding: 0 28px 0 8px;
+  }
+
+  .lang-switcher {
+    font-size: 16px;
+	z-index: 10;
+  }
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .PeFOrJkT335J .HgNEXbcXKiOWGk0V .row .cOaNiWcYOOqn .ZsCBRiEHhjKWIb {
+    top: -16px;
+    left: -16px;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .qGSIltTLQmLoI .cDuZQjGrhcf6 {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img {
+    max-width: 450px;
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .FRHAjcEsQAT {
+    display: block;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  p,
+  .PeFOrJkT335J .wOFCI2kSjym6B ul li {
+    font-size: 16px !important;
+  }
+
+  .header .container {
+    padding-right: 0;
+  }
+
+  .header .main-menu-desc {
+    display: none;
+  }
+
+  .header .YLhDOEawQoxqDW {
+    display: block;
+  }
+
+  .bqsnL7AjVbpXR.menu-open-mob .YLhDOEawQoxqDW {
+    background-position: center -72px;
+  }
+
+  .bqsnL7AjVbpXR.menu-open-mob .main-menu-mob {
+    opacity: 1;
+    z-index: 9;
+    visibility: visible;
+  }
+
+  .bqsnL7AjVbpXR.menu-open-mob .main-menu-mob > ul {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+  .PeFOrJkT335J .RGLItQW9aH {
+    padding: 16px;
+  }
+
+  .PeFOrJkT335J .RGLItQW9aH.uaQATjNZJ1 {
+    min-height: auto;
+    padding: 216px 16px 16px;
+  }
+
+  .PeFOrJkT335J .ywlgYNYtgKuE4vf8 .DLjtepfdesOhZJ,
+  .PeFOrJkT335J .RGLItQW9aH .hszJpvkDljV,
+  .ttOKnNStIgHIN,
+  .PeFOrJkT335J .wOFCI2kSjym6B h1,
+  .PeFOrJkT335J .wOFCI2kSjym6B h2 {
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+  .PeFOrJkT335J .wOFCI2kSjym6B h3 {
+    font-size: 20px;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B h4,
+  .PeFOrJkT335J .wOFCI2kSjym6B h5,
+  .PeFOrJkT335J .wOFCI2kSjym6B h6 {
+    font-size: 20px;
+  }
+
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu .UoPVXK3PDwK {
+    font-size: 24px;
+  }
+
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu {
+    min-height: 250px;
+    padding: 16px;
+  }
+
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu:after {
+    width: 514px;
+    height: 263px;
+    right: -40px;
+    bottom: -40px;
+  }
+
+  .PeFOrJkT335J .RGLItQW9aH.uaQATjNZJ1:after {
+    width: 240px;
+    height: 184px;
+    top: 16px;
+    left: 50%;
+    right: auto;
+    margin-top: 0;
+    margin-left: -120px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: var(--color-header-bg);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn .ZsCBRiEHhjKWIb {
+    top: -30px;
+    left: -24px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row.cVdjC8KmH {
+    display: none;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.LOoqvoP6rrX1T {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 2;
+    width: auto;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.LOoqvoP6rrX1T .num {
+    font-size: 14px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.rcFHnqBtJsdoQl,
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.bQUGYcsZWp,
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.ihVIsVxw,
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.cOaNiWcYOOqn-6 {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row {
+    padding: 0 0 8px;
+    overflow: hidden;
+    background-color: var(--color-header-bg);
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 7px 7px !important;
+    background: none;
+    gap: 5px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn.LOoqvoP6rrX1T {
+    top: auto;
+    left: auto;
+    position: relative;
+    background-color: var(--color-table-alt-bg);
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn p {
+    margin: 0;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn.LOoqvoP6rrX1T p {
+    flex-grow: 1;
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn p.cVdjC8KmH {
+    text-align: left;
+    color: var(--color-text-main);
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn .buttons {
+    flex-grow: 1;
+  }
+
+  .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.cOaNiWcYOOqn-6 .button {
+    min-height: 46px;
+  }
+
+  .PeFOrJkT335J .DYrIjFkwhHv9E {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .PeFOrJkT335J .DYrIjFkwhHv9E .item {
+    font-size: 16px;
+    width: 100%;
+    max-width: 48%;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J {
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J,
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J.UXYZNOK9pFtyGL {
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img {
+    max-width: 500px;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img.alignright,
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img.alignleft {
+    float: none;
+    margin: 16px auto 16px;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img.alignright,
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img.alignleft,
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img.aligncenter {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+  }
+
+  .PeFOrJkT335J .slots-items .slot {
+    padding: 8px;
+    flex: 0 0 calc(33.3% - 16px);
+  }
+
+  .PeFOrJkT335J .slots-filters,
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL {
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .wUbnokcWHf731SWN {
+    gap: 16px;
+    margin-right: -16px;
+  }
+
+  .PeFOrJkT335J .wUbnokcWHf731SWN .item {
+    height: 250px;
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  .PeFOrJkT335J .GEoGOtPQNfqqjR {
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B table tr td {
+    padding: 10px;
+  }
+
+  .PeFOrJkT335J .ywlgYNYtgKuE4vf8 .teXhnMiVlLpR {
+    width: 495px;
+    height: 295px;
+  }
+
+  .PeFOrJkT335J .aLhNneSpZ1O5w .faq-item .faq-item-title {
+    font-size: 18px;
+    padding: 20px 44px 20px 10px;
+  }
+
+  .PeFOrJkT335J .aLhNneSpZ1O5w .faq-item .faq-item-title:after {
+    right: 10px;
+  }
+
+  .PeFOrJkT335J .aLhNneSpZ1O5w .faq-item .faq-item-info {
+    padding: 0 10px 20px;
+  }
+
+  .PeFOrJkT335J .SxgaTQMS {
+    gap: 16px;
+    margin-right: -16px;
+  }
+
+  .PeFOrJkT335J .SxgaTQMS .item {
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  .PeFOrJkT335J .SxgaTQMS .item .item-info {
+    padding: 10px 16px;
+  }
+
+  .PeFOrJkT335J .SxgaTQMS .item .item-info .row .col {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .YMirgtevyOTSo {
+    gap: 16px;
+    margin-right: -16px;
+  }
+
+  .PeFOrJkT335J .YMirgtevyOTSo .item {
+    flex: 0 0 calc(50% - 16px);
+  }
+
+  .PeFOrJkT335J .YMirgtevyOTSo .item li {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T,
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 .OiKRoJfSlRYHey .info-stat {
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 {
+    padding: 16px;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 .OiKRoJfSlRYHey {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .TomHEyzPWM4H2AR {
+    padding: 16px;
+  }
+
+  .PeFOrJkT335J .TomHEyzPWM4H2AR .nBMYyvZsMSwmkO {
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .TomHEyzPWM4H2AR .nBMYyvZsMSwmkO .info-stat {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .TomHEyzPWM4H2AR .SuZhockAv7dz .buttons .button {
+    min-height: 46px;
+  }
+
+  .PeFOrJkT335J .yMSFpu0QsG .wGqAvAqEZHHnGjj {
+    padding: 0 16px 20px;
+  }
+
+  .PeFOrJkT335J .yMSFpu0QsG .wGqAvAqEZHHnGjj .field input,
+  .PeFOrJkT335J .yMSFpu0QsG .wGqAvAqEZHHnGjj .field textarea {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .yMSFpu0QsG .TdZwzsdVqxYz .item {
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .yMSFpu0QsG .TdZwzsdVqxYz .item .huMDpSlLpX {
+    width: 60px;
+    height: 60px;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 .cDuZQjGrhcf6 img.olCugVN4WXw2G {
+    width: 160px;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 .cDuZQjGrhcf6 .info-stat {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr {
+    padding: 10px;
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr .PpCWpAb2C2V9 {
+    width: 55px;
+  }
+
+  .PeFOrJkT335J .UlFLiWpCNEa li a {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .OEsVgiRou3Td {
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .OEsVgiRou3Td .rating {
+    justify-content: center;
+  }
+
+  .PeFOrJkT335J .OEsVgiRou3Td .buttons {
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .OEsVgiRou3Td p {
+    text-align: center;
+  }
+
+  .PeFOrJkT335J .OEsVgiRou3Td .dNZlZimGFmcI7FV {
+    display: flex;
+    gap: 16px;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl {
+    flex: 0 0 calc(50% - 22px);
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl .gPFbemecT {
+    font-size: 20px;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .axsZfE3xNzA {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .axsZfE3xNzA .QQcGbchqdBs65Ei {
+    text-align: center;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .qGSIltTLQmLoI {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .qGSIltTLQmLoI .cDuZQjGrhcf6 .PpCWpAb2C2V9 img {
+    min-height: 200px;
+  }
+
+  .PeFOrJkT335J .LKrBpF7hqhS .qGSIltTLQmLoI .dNZlZimGFmcI7FV .buttons {
+    align-items: left;
+  }
+
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz {
+    overflow: visible;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz img {
+    min-width: auto;
+  }
+
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    background: none;
+    padding: 0;
+	width: 100%;
+	max-width: 100%;
+  }
+
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc .ttOKnNStIgHIN {
+    max-width: 100%;
+  }
+
+  .PeFOrJkT335J .iZnMUmGk .RPNnByOkHonuAh44 .vqAqZHrZH1UA {
+    font-size: 18px;
+  }
+
+  .footer .wrapper.uBhRYtPATfTyki22 {
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .footer .jLgejisGpy7vfst {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .footer .jLgejisGpy7vfst li {
+    list-style: none;
+    margin: 10px;
+  }
+
+  .VrREEH0i4yP .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .PeFOrJkT335J .best-casinos-items .row:nth-child(even) .JaAgXBCqq,
+  .PeFOrJkT335J .best-casinos-items .row.cVdjC8KmH .JaAgXBCqq,
+  .PeFOrJkT335J .best-casinos-items .row .JaAgXBCqq {
+    width: 100%;
+  }
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc .ttOKnNStIgHIN {
+    font-size: 32px;
+	  padding: 0 5px;
+	 
+  }
+	.PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn.cOaNiWcYOOqn-6 .button {
+		min-height: 36px;
+	}
+	
+[load-more] div[role=list] {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+	html[amp] amp-list.best-casinos-items {
+		height: auto!important;
+	}
+}
+
+@media screen and (min-width: 728px) { 
+	.PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc  {
+	top: auto!important;
+	bottom: 0!important;
+	padding-bottom: 0;
+}
+	.PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc  {
+    transform: translateX(-50%);
+	margin-bottom: 40px;
+}
+
+}
+	
+@media screen and (max-width: 1000px) {
+  .PeFOrJkT335J .slots-filters,
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL,
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL .DqjtwIDqBeZ {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL .DqjtwIDqBeZ .filter-item {
+    width: auto;
+  }
+
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL .DqjtwIDqBeZ .ZncnzyzgcB {
+    font-size: 16px;
+  }
+
+  .PeFOrJkT335J .slots-filters .MfvbxwyX3eoL .DqjtwIDqBeZ .fZhPUOOAtKwH {
+    text-align: center;
+  }
+  .PeFOrJkT335J .wOFCI2kSjym6B h3 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .PeFOrJkT335J .eUqIyO2oEmy6T {
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 {
+    width: 100%;
+  }
+
+  .PeFOrJkT335J .bSdIfdKL2SjnS1t1 .yyehIpuM8iuT {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .PeFOrJkT335J
+    .bSdIfdKL2SjnS1t1
+    .yyehIpuM8iuT
+    .item-info
+    .PySWVk5ecbJI {
+    flex-direction: column;
+    align-items: left;
+    gap: 0;
+  }
+
+  .PeFOrJkT335J .bSdIfdKL2SjnS1t1 .yyehIpuM8iuT .item-info .DvyQMDA7IB7E {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .PeFOrJkT335J .bSdIfdKL2SjnS1t1 .yyehIpuM8iuT .buttons {
+    align-items: flex-start;
+  }
+
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 16px;
+    background: none;
+    width: 95% !important;
+    padding: 10px !important;
+    gap: 20px;
+  }
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .PeFOrJkT335J .best-casinos-items .row {
+    flex-direction: column;
+  }
+	
+[load-more] div[role=list] {
+	width: 100%;
+	gap: 16px;
+    display: flex;
+    flex-direction: column;
+	}
+	
+amp-list.best-casinos-items[load-more] {
+  max-height: 100% !important;
+}
+	
+amp-list.slots-items > div[role="list"] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+	}
+	.PeFOrJkT335J .slots-items .slot {
+		height: fit-content;
+	}
+	html[amp] .PeFOrJkT335J .best-casinos-items .row .cOaNiWcYOOqn .ZsCBRiEHhjKWIb {
+	top: 43px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    font-size: 6px;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .PeFOrJkT335J .GEoGOtPQNfqqjR {
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .GEoGOtPQNfqqjR .bLBEoxAG7i .hasMjGScosx {
+    justify-content: center;
+  }
+  .yoSFOmoQYpDLN {
+    flex-direction: column;
+    align-items: center;
+  }
+	.PeFOrJkT335J .eUqIyO2oEmy6T .hESlezeL5Imoz {
+		display: flex;
+		justify-content: center;
+	}
+	
+ .PeFOrJkT335J .oDgXItgcCA {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+	.PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl .gPFbemecT {
+		font-size: 13px!important;
+	}
+	.PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl p {
+		font-size: 11px!important;
+		line-height: 13.3px;
+	}
+	.PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl .qKYJ6WZYW img {
+		max-width: 85px;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+  .PeFOrJkT335J .best-casinos-items .row {
+    max-width: 100%;
+  }
+
+  .PeFOrJkT335J .DYrIjFkwhHv9E .item {
+    max-width: 100%;
+  }
+
+  .PeFOrJkT335J .wOFCI2kSjym6B .vjUy54vJFJ5J img {
+    max-width: 100%;
+  }
+
+  .PeFOrJkT335J .slots-items {
+    margin-right: -8px;
+    gap: 8px;
+  }
+
+  .PeFOrJkT335J .slots-items .slot {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  .PeFOrJkT335J .slots-items .slot .XCuKthEN2OQnf0 img {
+    max-height: none;
+  }
+
+  .PeFOrJkT335J .wUbnokcWHf731SWN {
+    margin-right: 0;
+  }
+
+  .PeFOrJkT335J .wUbnokcWHf731SWN .item {
+    flex: 100%;
+    height: 300px;
+  }
+
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu:after {
+    display: none;
+  }
+
+  .PeFOrJkT335J .ywlgYNYtgKuE4vf8 .teXhnMiVlLpR {
+    width: 360px;
+    height: 214px;
+  }
+
+  .PeFOrJkT335J .SxgaTQMS {
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .SxgaTQMS .item {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .PeFOrJkT335J .YMirgtevyOTSo {
+    gap: 30px;
+    margin-right: 0;
+    flex-direction: column;
+  }
+
+  .PeFOrJkT335J .YMirgtevyOTSo .item {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 {
+    gap: 24px;
+  }
+
+  .PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 .OiKRoJfSlRYHey {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 .cDuZQjGrhcf6 img.olCugVN4WXw2G {
+    width: 258px;
+  }
+
+  .PeFOrJkT335J .bQPx8ig52 .cDuZQjGrhcf6 .info-stat {
+    align-items: center;
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA {
+    margin-right: 0;
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl {
+    flex: 100%;
+  }
+
+  .PeFOrJkT335J .oDgXItgcCA .CJSnXPZmF2Jl .pnfEbXUsU0Dsl {
+    text-align: center;
+  }
+  .foiLTGtp3Xgv6fDZ p {
+    font-size: 18px;
+  }
+  .aLhNneSpZ1O5w {
+    padding: 20px 20px;
+  }
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu .UoPVXK3PDwK {
+    font-size: 18px;
+    padding-bottom: 7px;
+  }
+  .LVLjdiAjoH6MXRu p {
+    font-size: 12px !important;
+  }
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu .button {
+    font-size: 16px;
+    margin-top: 7px;
+    min-height: 30px;
+    max-width: 150px;
+    border-radius: 5px;
+  }
+  .PeFOrJkT335J .LVLjdiAjoH6MXRu {
+    min-height: 100%;
+  }
+  .PeFOrJkT335J .wOFCI2kSjym6B h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr {
+    padding: 25px;
+    position: relative;
+  }
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr .PpCWpAb2C2V9 {
+    position: absolute;
+    width: 42px;
+  }
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr .rating {
+    margin-left: 50px;
+  }
+  .PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr .DvyQMDA7IB7E {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  .fBkRfgAkHYF {
+    font-size: 20px;
+  }
+  .NWXPgFVXJ {
+    font-size: 18px;
+  }
+  .PeFOrJkT335J .best-casinos-items.LiwiBKaAgIR .row .cOaNiWcYOOqn {
+    padding: 5px !important;
+    justify-content: space-between;
+  }
+  .PeFOrJkT335J .iZnMUmGk .SuZhockAv7dz .wjhfi2jBc .ttOKnNStIgHIN {
+    font-size: 25px;
+  }
+  .PeFOrJkT335J .TomHEyzPWM4H2AR {
+    padding: 16px 16px 40px;
+    position: relative;
+  }
+  .PeFOrJkT335J .TomHEyzPWM4H2AR .nBMYyvZsMSwmkO .info-stat {
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+  }
+	.PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr {
+		flex-direction: column;
+	}
+	.PeFOrJkT335J .qvrXFiQUJ .ZAOYv1NRyNdr .rating {
+		position: absolute;
+		top: 22px;
+        left: 30px;
+	}
+	.ZAOYv1NRyNdr img {
+		width: 42px;
+		height: 42px;
+	}
+	.PeFOrJkT335J .eUqIyO2oEmy6T .nOaVpVKs61v8 .OiKRoJfSlRYHey .info-stat {
+		align-items: center;
+	}
+	amp-list.slots-items > div[role="list"] {
+    margin-right: -8px;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer .wrapper .yvcLVUuP {
+    width: 146px;
+  }
+  .footer .wrapper .yvcLVUuP .wAXgJnAELvhM {
+    font-size: 16px;
+  }
+  .PeFOrJkT335J .TomHEyzPWM4H2AR .SuZhockAv7dz .buttons .button {
+    font-size: 13px;
+    max-width: 170px;
+	padding-top: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .PeFOrJkT335J .UlFLiWpCNEa {
+    justify-content: space-between;
+  }
+}
+
+
+/* submenu */
+@media screen and (max-width: 1370px) {
+    .header .main-menu-desc > li > a, .header .main-menu-desc > li > span {
+        padding: 0 16px 0 8px;
+    }
+	
+}
+
+@media screen and (max-width: 1023px) {
+    .wOFCI2kSjym6B ol li {
+        font-size: 16px !important;
+    }
+	.PeFOrJkT335J .bQPx8ig52 .cDuZQjGrhcf6 img.olCugVN4WXw2G {
+        width: 160px;
+        height: 160px;
+    }
+	.has-submenu > a::after {
+		content: none;
+	}
+}
+
+@media screen and (max-width: 860px) {
+    .PeFOrJkT335J .slots-items .slot {
+        height: auto;
+    }
+	.rating {
+		margin-bottom: 9px;
+	}
+}

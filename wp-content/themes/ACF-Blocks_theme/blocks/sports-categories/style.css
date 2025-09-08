@@ -1,0 +1,252 @@
+/* Sports Categories Block Frontend Styles */
+.sports-categories-block {
+    background-color: var(--bonus-cards-bg-color, #0B0F18);
+    padding: 25px 14px;
+    margin: 40px 0;
+    border: 2px solid #B6BBD40D !important;
+    border-radius: 20px;
+    
+}
+
+.sports-categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sports-categories-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #EAECFC;
+    text-align: left;
+    margin: 0px 0 17px 0;
+    line-height: 1.2;
+}
+
+.sports-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+.sport-category-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #07080E;
+    border-radius: 10px;
+    border: 1px solid #3EF2D1;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #EAECFC;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    min-height: 45px;
+}
+
+.sport-category-item:hover {
+    background: #3EF2D1;
+    border-color: #3EF2D1;
+    color: #07080E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px #3EF2D4;
+}
+
+.sport-category-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #07080E;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.sport-category-item:hover .sport-category-icon {
+    background: #07080E;
+    color: #3EF2D1;
+} 
+
+.sport-category-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: inherit;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Mobile Styles - 2 columns */
+@media (max-width: 768px) {
+    .sports-categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .sport-category-item {
+        padding: 10px 12px;
+        min-height: 40px;
+    }
+    
+    .sport-category-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    
+    
+    .sports-categories-title {
+        font-size: 24px;
+    }
+}
+
+.sport-category-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.sport-category-item:hover .sport-category-icon-container {
+    background: #07080E;
+}
+
+.sport-category-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0.9) contrast(1.1);
+    transition: all 0.3s ease;
+}
+
+.sport-category-item:hover .sport-category-icon {
+    filter: brightness(1.2) contrast(1.2);
+}
+
+.sport-category-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.sport-category-name {
+    font-weight: 500;
+    line-height: 1;
+}
+
+.sport-category-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .sports-categories-title {
+        font-size: 24px;
+    }
+    
+    .sports-categories-grid {
+        gap: 12px;
+    }
+    
+    .sport-category-item {
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+    
+    .sport-category-icon-container {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .sports-categories-block {
+        padding: 22px 11px;
+    }
+    
+    
+    .sports-categories-grid {
+        gap: 10px;
+    }
+    
+    .sport-category-item {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    
+    .sport-category-icon-container {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .sport-category-icon {
+        width: 18px;
+        height: 18px;
+        font-size: 8px;
+    }
+    
+    .sport-category-icon-placeholder {
+        font-size: 14px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    
+    .sports-categories-grid {
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .sport-category-item {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+    
+    .sport-category-icon-container {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .sport-category-icon-placeholder {
+        font-size: 12px;
+    }
+}
+
+/* Editor Styles */
+.sport-category-item.editor-preview {
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.sport-category-item.editor-preview:hover {
+    transform: none;
+    box-shadow: none;
+}

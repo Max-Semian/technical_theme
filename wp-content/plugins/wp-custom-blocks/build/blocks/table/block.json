@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/table",
+  "version": "0.1.0",
+  "title": "Table",
+  "category": "wp-custom-blocks",
+  "description": "Table block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "table-item-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./init-table-sliders.js"
+}

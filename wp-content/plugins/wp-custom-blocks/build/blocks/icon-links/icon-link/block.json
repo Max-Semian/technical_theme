@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/icon-link",
+  "version": "0.1.0",
+  "title": "Icon link",
+  "category": "wp-custom-blocks",
+  "description": "Icon link block",
+  "parent": [
+    "wp-custom-blocks/icon-links"
+  ],
+  "supports": {
+    "html": false
+  },
+  "textdomain": "icon-link-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

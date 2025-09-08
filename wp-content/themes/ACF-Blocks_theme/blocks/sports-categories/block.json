@@ -1,0 +1,99 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "acf-blocks-theme/sports-categories",
+    "version": "1.0.0",
+    "title": "Sports Categories Block",
+    "description": "Отображение категорий спорта с иконками в виде тегов/кнопок",
+    "category": "casino-theme",
+    "icon": "tag",
+    "keywords": ["sports", "categories", "tags", "buttons", "sport"],
+    "textdomain": "acf-blocks-theme",
+    "render": "file:./render.php",
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true,
+        "customClassName": true,
+        "reusable": true,
+        "multiple": true,
+        "inserter": true,
+        "lock": false,
+        "color": {
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "backgroundColor": {
+            "type": "string",
+            "default": "#1a1d29"
+        },
+        "blockTitle": {
+            "type": "string",
+            "default": "Все виды спорта"
+        },
+        "sportsCategories": {
+            "type": "array",
+            "default": [
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Футбол",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Баскетбол",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Теннис",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Хоккей",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Волейбол",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Бокс",
+                    "url": "#"
+                }
+            ]
+        }
+    },
+    "example": {
+        "attributes": {
+            "sportsCategories": [
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Футбол",
+                    "url": "#"
+                },
+                {
+                    "iconUrl": "",
+                    "iconId": 0,
+                    "name": "Баскетбол",
+                    "url": "#"
+                }
+            ]
+        }
+    }
+}

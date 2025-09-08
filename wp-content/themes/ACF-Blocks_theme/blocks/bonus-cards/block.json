@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "acf-blocks-theme/bonus-cards",
+    "version": "1.0.0",
+    "title": "Bonus Cards Block",
+    "description": "Отображение карточек бонусов в сетке 2x4 (десктоп) и 2x2 (мобиль)",
+    "category": "casino-theme",
+    "icon": "grid-view",
+    "keywords": ["bonus", "cards", "casino", "bonuses", "grid"],
+    "textdomain": "acf-blocks-theme",
+    "render": "file:./render.php",
+    "supports": {
+        "html": false,
+        "align": ["wide", "full"],
+        "anchor": true,
+        "customClassName": true,
+        "reusable": true,
+        "multiple": true,
+        "inserter": true,
+        "lock": false,
+        "color": {
+            "background": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "attributes": {
+        "backgroundColor": {
+            "type": "string",
+            "default": "#1a1d29"
+        },
+        "blockTitle": {
+            "type": "string",
+            "default": "Наши бонусы"
+        },
+        "bonuses": {
+            "type": "array",
+            "default": [
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "Приветственный бонус",
+                    "status": "Casino",
+                    "url": "#"
+                },
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "Фриспины",
+                    "status": "Спорт",
+                    "url": "#"
+                },
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "Кешбэк",
+                    "status": "Casino",
+                    "url": "#"
+                },
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "VIP бонус",
+                    "status": "VIP",
+                    "url": "#"
+                }
+            ]
+        }
+    },
+    "example": {
+        "attributes": {
+            "bonuses": [
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "Приветственный бонус",
+                    "status": "Casino",
+                    "url": "#"
+                },
+                {
+                    "imageUrl": "",
+                    "imageId": 0,
+                    "title": "Фриспины", 
+                    "status": "Спорт",
+                    "url": "#"
+                }
+            ]
+        }
+    }
+}

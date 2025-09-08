@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/template",
+  "version": "0.1.0",
+  "title": "Template",
+  "category": "wp-custom-blocks",
+  "description": "Template block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "template-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": [
+    "file:./init-template-sliders.js",
+    "file:./init-light-boxes.js"
+  ]
+}

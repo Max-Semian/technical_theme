@@ -1,0 +1,91 @@
+{
+    "apiVersion": 2,
+    "name": "acf-blocks-theme/popular-slots",
+    "title": "Популярные слоты",
+    "description": "Блок с сеткой популярных игровых слотов",
+    "category": "casino-theme",
+    "icon": "games",
+    "keywords": ["слоты", "игры", "популярные", "казино"],
+    "supports": {
+        "anchor": true,
+        "align": ["wide", "full"],
+        "html": false,
+        "customClassName": true
+    },
+    "attributes": {
+        "blockTitle": {
+            "type": "string",
+            "default": "Популярные слоты"
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#0B0F18"
+        },
+        "slots": {
+            "type": "array",
+            "default": [
+                {
+                    "title": "Slot Game 1",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 2", 
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 3",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 4",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 5",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 6",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 7",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                },
+                {
+                    "title": "Slot Game 8",
+                    "image": "",
+                    "imageId": 0,
+                    "demoUrl": "#",
+                    "playUrl": "#"
+                }
+            ]
+        }
+    },
+    "textdomain": "acf-blocks-theme",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

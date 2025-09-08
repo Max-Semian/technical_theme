@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wp-custom-blocks/available-table",
+  "version": "0.1.0",
+  "title": "Available table",
+  "category": "wp-custom-blocks",
+  "description": "Available table block",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "available-table-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

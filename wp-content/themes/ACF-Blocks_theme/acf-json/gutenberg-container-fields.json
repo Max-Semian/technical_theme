@@ -1,0 +1,132 @@
+[
+    {
+        "key": "group_gutenberg_container",
+        "title": "Контейнер для Gutenberg блоков",
+        "fields": [
+            {
+                "key": "field_container_title",
+                "label": "Заголовок контейнера",
+                "name": "container_title",
+                "type": "text",
+                "instructions": "Заголовок будет отображен над содержимым контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Введите заголовок",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_background_color",
+                "label": "Цвет фона",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "Выберите цвет фона для контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "enable_opacity": 1,
+                "return_format": "string"
+            },
+            {
+                "key": "field_padding",
+                "label": "Размер отступов",
+                "name": "padding",
+                "type": "select",
+                "instructions": "Выберите размер внутренних отступов",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "small": "Маленькие",
+                    "medium": "Средние",
+                    "large": "Большие"
+                },
+                "default_value": "medium",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_container_type",
+                "label": "Тип контейнера",
+                "name": "container_type",
+                "type": "select",
+                "instructions": "Выберите визуальный стиль контейнера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "34",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default": "Обычный",
+                    "card": "Карточка",
+                    "section": "Секция"
+                },
+                "default_value": "default",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_css_class",
+                "label": "Дополнительные CSS классы",
+                "name": "css_class",
+                "type": "text",
+                "instructions": "Добавьте дополнительные CSS классы для кастомизации",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "custom-class another-class",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/gutenberg-container"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Поля для настройки контейнера Gutenberg блоков"
+    }
+]

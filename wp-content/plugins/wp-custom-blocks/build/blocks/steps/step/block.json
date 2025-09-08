@@ -1,0 +1,19 @@
+{
+  "apiVersion": 2,
+  "name": "wp-custom-blocks/step",
+  "version": "0.1.0",
+  "title": "Single Step",
+  "category": "wp-custom-blocks",
+  "description": "Child for Steps Block.",
+  "parent": [
+    "wp-custom-blocks/steps"
+  ],
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "textdomain": "steps-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
