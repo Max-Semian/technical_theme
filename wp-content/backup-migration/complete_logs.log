@@ -1,0 +1,12 @@
+[2025-09-08 07:25:32] [LOG] Restoring site...
+[2025-09-08 07:32:53] [LOG] Site restored...
+[2025-09-08 07:32:53] [LOG] Process (migration) finished successfully via ajax.php
+[2025-09-08 07:32:55] [ERROR] Front End Ajax Error START
+[2025-09-08 07:32:55] [ERROR] call = is-running-backup
+[2025-09-08 07:32:55] [ERROR] 0_x = response is not defined
+[2025-09-08 07:32:55] [ERROR] 1_x = is-running-backup
+[2025-09-08 07:32:55] [ERROR] 2_action = backup_migration
+[2025-09-08 07:32:55] [ERROR] 2_token = bmi
+[2025-09-08 07:32:55] [ERROR] 2_nonce = 59875611a9
+[2025-09-08 07:32:55] [ERROR] 2_f = is-running-backup
+[2025-09-08 07:32:55] [ERROR] Front End Ajax Error END
