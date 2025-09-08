@@ -3,7 +3,7 @@
 * Template Name: Главная
 */
 get_header(); ?>
-<div class="main-block">
+<div class="main-block" id="main-content">
 	<section class="main">
 		<div class="main-bg"></div>
 		<div class="main-gorod-bg"></div>
@@ -21,33 +21,19 @@ get_header(); ?>
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
-								<span class="main-bonus-text">ボーナス</span>
-							</div>
-						</a>
-					</div>
-					<div class="main-bonus-container-row">
-						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
-								<span class="main-bonus-text">ボーナス</span>
-							</div>
-						</a>
-						<a href="#" class="main-bonus" target="_blank">
-							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
@@ -55,7 +41,21 @@ get_header(); ?>
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+								<span class="main-bonus-text">ボーナス</span>
+							</div>
+						</a>
+						<a href="#" class="main-bonus" target="_blank">
+							<div lass="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
+								<span class="main-bonus-text">ボーナス</span>
+							</div>
+						</a>
+					</div>
+					<div class="main-bonus-container-row">
+						<a href="#" class="main-bonus" target="_blank">
+							<div lass="main-bonus-info">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
@@ -67,37 +67,37 @@ get_header(); ?>
 					<div class="main-bonus-container-row">
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
 						<a href="#" class="main-bonus" target="_blank">
 							<div lass="main-bonus-info">
-								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon">
+								<img src="/wp-content/uploads/2025/05/bonus-icon.svg" class="main-bonus-icon" alt="????????">
 								<span class="main-bonus-text">ボーナス</span>
 							</div>
 						</a>
@@ -114,7 +114,7 @@ get_header(); ?>
 				<div class="text">オンラインカジノの中でもおすすめのサイト探しや、最新カジノニュースはもちろん、信用できるオンライ<br> ンカジノを比較するのに役立つ場所。 オンカジが大好きなあなた！ ジャパカジの右に出るところはナシっ</div>
 			</div>
 			<div class="about-right">
-				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251">
+				<img src="/wp-content/uploads/2025/05/about.webp" width="365" height="251" alt="????????">
 			</div>
 		</div>
 	</section>
@@ -130,7 +130,7 @@ get_header(); ?>
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
 								<div class="card-item-rating">
 									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 								<div class="card-item-tags">
 									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
@@ -138,15 +138,15 @@ get_header(); ?>
 								</div>
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本語サポート</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
 										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
 									</div>
 								</div>
@@ -168,7 +168,7 @@ get_header(); ?>
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
 								<div class="card-item-rating">
 									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 								<div class="card-item-tags">
 									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
@@ -176,15 +176,15 @@ get_header(); ?>
 								</div>
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本語サポート</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
 										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
 									</div>
 								</div>
@@ -206,7 +206,7 @@ get_header(); ?>
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
 								<div class="card-item-rating">
 									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 								<div class="card-item-tags">
 									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
@@ -214,15 +214,15 @@ get_header(); ?>
 								</div>
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本語サポート</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
 										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
 									</div>
 								</div>
@@ -244,7 +244,7 @@ get_header(); ?>
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
 								<div class="card-item-rating">
 									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 								<div class="card-item-tags">
 									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
@@ -252,15 +252,15 @@ get_header(); ?>
 								</div>
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本語サポート</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
 										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
 									</div>
 								</div>
@@ -282,7 +282,7 @@ get_header(); ?>
 								<h3 class="title">K8カジノの評判やボーナスを解説！入出</h3>
 								<div class="card-item-rating">
 									<div class="card-rating-number">5.0</div>
-									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+									<div class="card-rating-stars"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 								<div class="card-item-tags">
 									<div class="card-item-tags-item">ボーナス <b>¥3,000</b></div>
@@ -290,15 +290,15 @@ get_header(); ?>
 								</div>
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本語サポート</div>
 									</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg"></div>
+										<div class="card-item-lists-icon"><img src="/wp-content/uploads/2025/05/chip-1.svg" alt="???????"></div>
 										<div class="card-item-lists-text">多くのライブディーラーゲーム</div>
 									</div>
 								</div>
@@ -424,7 +424,7 @@ get_header(); ?>
 		<div class="subscribe-description">ジャパカジニュースレターに登録して、カジノオファーやキャンペー<br> ン、限定ボーナスの最新情報をゲットしよう！</div>
 		<form class="subscribe-mail">
 			<div class="subscribe-input-group">
-				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon">
+				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon" alt="???????">
 				<input type="text" class="subscribe-mail-input" placeholder="ジャパカジニュースレタ">
 				<input type="submit" class="subscribe-mail-button" value="登録する">
 			</div>

@@ -1,6 +1,6 @@
         <footer>
             <div class="footer-block">
-				<a href="/"class="footer-logo"><img src="/wp-content/uploads/2025/05/Logo.webp"></a>
+				<a href="/"class="footer-logo" aria-label="ホームページに戻る"><img src="/wp-content/uploads/2025/05/Logo.webp" alt="サイトロゴ"></a>
 				<div class="footer-lists">
 					<?php if (has_nav_menu('footer_menu_one')) { ?>
 						<div class="footer-list-one footer-list">
@@ -66,9 +66,9 @@
 							<?php if (get_field('footer_logos_images', 'option')) {
 								foreach (get_field('footer_logos_images', 'option') as $item) { ?>
 									<?php if ($item['link']) { ?>
-										<a href="<?php echo $item['link']; ?>" target="_blank"><img src="<?php echo $item['img']; ?>"></a>
+										<a href="<?php echo $item['link']; ?>" target="_blank"><img src="<?php echo $item['img']; ?>" alt="<?php echo !empty($item['alt']) ? $item['alt'] : 'ロゴ'; ?>"></a>
 									<?php } else { ?>
-										<img src="<?php echo $item['img']; ?>">
+										<img src="<?php echo $item['img']; ?>" alt="<?php echo !empty($item['alt']) ? $item['alt'] : 'ロゴ'; ?>">
 									<?php }
 								}
 							} ?>

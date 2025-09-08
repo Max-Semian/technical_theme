@@ -7,7 +7,7 @@ function tgg_scripts() {
 	wp_enqueue_style('slick-theme', get_stylesheet_directory_uri().'/assets/css/slick-theme.css');
 	wp_enqueue_style('fancybox', get_stylesheet_directory_uri().'/assets/css/fancybox.css');
 	wp_deregister_script('jquery');
-    wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), false, null, true);  
+    wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), array(), null, true);  
 	wp_enqueue_script('jquery');
 	wp_register_script('slick-script', get_stylesheet_directory_uri().'/assets/js/slick.js', array('jquery'), false, true);
 	wp_enqueue_script('slick-script');
@@ -95,7 +95,15 @@ class True_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$attributes  = !empty($item->attr_title) ? ' title="'  . esc_attr($item->attr_title) . '"' : '';
 		$attributes .= !empty($item->target)     ? ' target="' . esc_attr($item->target) . '"' : '';
 		$attributes .= !empty($item->xfn)        ? ' rel="'    . esc_attr($item->xfn) . '"' : '';
-		$attributes .= !empty($item->url)        ? ' href="'   . esc_attr($item->url) . '"' : '';
+		
+		// Ensure all links have href attribute for crawlability
+		if (!empty($item->url)) {
+			$attributes .= ' href="' . esc_attr($item->url) . '"';
+		} else {
+			// For menu items without URL (like parent items), add href="#" and accessibility attributes
+			$attributes .= ' href="#" role="button" aria-expanded="false" aria-haspopup="true" tabindex="0"';
+		}
+		
 		$item_output = $args->before;
 		$item_output .= $image_html;
 		$item_output .= '<a' . $attributes . '>';       
@@ -186,7 +194,7 @@ function cards_section_function($atts) {
 						if ($rating) {
 			  				$ball = $rating * 106 / 5; ?>
 							<div class="card-rating-number"><?php echo round($rating, 2); ?></div>
-							<div class="card-rating-stars" style="width: <?php echo round($ball, 2); ?>px;"><img src="/wp-content/uploads/2025/05/Stars.svg"></div>
+							<div class="card-rating-stars" style="width: <?php echo round($ball, 2); ?>px;"><img src="/wp-content/uploads/2025/05/Stars.svg" alt="レーティング <?php echo round($rating, 2); ?> 星"></div>
 						<?php } ?>
 					</div>
 					<div class="card-item-tags">
@@ -197,7 +205,7 @@ function cards_section_function($atts) {
 					<div class="card-item-lists">
 						<?php foreach (get_lzb_meta('advantages') as $item) { ?>
 							<div class="cart-item-lists-item">
-								<div class="card-item-lists-icon"><img src="<?php echo $item['icon']['url']; ?>"></div>
+								<div class="card-item-lists-icon"><img src="<?php echo $item['icon']['url']; ?>" alt="<?php echo !empty($item['icon']['alt']) ? $item['icon']['alt'] : $item['text']; ?>"></div>
 								<div class="card-item-lists-text"><?php echo $item['text']; ?></div>
 			 				</div>
 						<?php } ?>
@@ -325,3 +333,161 @@ require_once get_stylesheet_directory() . '/inc/registers/review-casino.php';
 add_action('enqueue_block_editor_assets', function() {  
 	wp_enqueue_script('sa-edit-block-image-gutenberg', get_template_directory_uri().'/assets/js/gutenberg/gutenbergimageblockedit.js', ['wp-edit-post']);   
 });
+
+// Accessibility improvement: Fix heading hierarchy issues
+function fix_heading_hierarchy($content) {
+    // Only run on frontend
+    if (is_admin()) {
+        return $content;
+    }
+    
+    // Check if content has heading hierarchy issues
+    $dom = new DOMDocument();
+    $dom->loadHTML('<?xml encoding="utf-8" ?>' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+    
+    $headings = [];
+    $xpath = new DOMXPath($dom);
+    $heading_nodes = $xpath->query('//h1 | //h2 | //h3 | //h4 | //h5 | //h6');
+    
+    foreach ($heading_nodes as $node) {
+        $level = intval(substr($node->tagName, 1));
+        $headings[] = ['node' => $node, 'level' => $level];
+    }
+    
+    // Check for hierarchy violations and add accessibility attributes
+    $previous_level = 0;
+    foreach ($headings as $heading) {
+        $current_level = $heading['level'];
+        $node = $heading['node'];
+        
+        // If heading jumps more than one level, add aria-level to clarify structure
+        if ($current_level > $previous_level + 1 && $previous_level > 0) {
+            // Add aria-level for screen readers
+            $node->setAttribute('aria-level', $current_level);
+            
+            // Add screen reader text to explain the hierarchy
+            $sr_text = $dom->createElement('span');
+            $sr_text->setAttribute('class', 'sr-only');
+            $sr_text->textContent = '(レベル ' . $current_level . ' 見出し) ';
+            $node->insertBefore($sr_text, $node->firstChild);
+        }
+        
+        $previous_level = $current_level;
+    }
+    
+    return $dom->saveHTML();
+}
+
+// Apply heading hierarchy fix to content
+add_filter('the_content', 'fix_heading_hierarchy', 10);
+
+// Add accessibility improvements to search form
+function add_search_form_accessibility($form) {
+    $form = str_replace(
+        '<input type="search"',
+        '<input type="search" aria-label="検索キーワードを入力"',
+        $form
+    );
+    
+    $form = str_replace(
+        '<button type="submit"',
+        '<button type="submit" aria-label="検索を実行"',
+        $form
+    );
+    
+    return $form;
+}
+add_filter('get_search_form', 'add_search_form_accessibility');
+
+// Add skip links for keyboard navigation
+function add_skip_links() {
+    echo '<a class="skip-link" href="#main-content">メインコンテンツへスキップ</a>';
+    echo '<a class="skip-link" href="#main-navigation">ナビゲーションへスキップ</a>';
+}
+add_action('wp_body_open', 'add_skip_links');
+
+// Fix uncrawlable links in content
+function fix_uncrawlable_links($content) {
+    // Only run on frontend
+    if (is_admin()) {
+        return $content;
+    }
+    
+    // Replace anchor tags without href attribute
+    $content = preg_replace_callback(
+        '/<a(?![^>]*href=)([^>]*)>([^<]*)<\/a>/',
+        function($matches) {
+            $attributes = $matches[1];
+            $text = $matches[2];
+            
+            // Add href="#" and appropriate attributes for accessibility
+            $new_attributes = $attributes . ' href="#" role="button" tabindex="0" aria-label="' . esc_attr($text) . '"';
+            
+            return '<a' . $new_attributes . '>' . $text . '</a>';
+        },
+        $content
+    );
+    
+    return $content;
+}
+add_filter('the_content', 'fix_uncrawlable_links', 15);
+
+// Add structured data for better SEO
+function add_website_structured_data() {
+    if (is_front_page()) {
+        $schema = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'WebSite',
+            'name' => get_bloginfo('name'),
+            'description' => get_bloginfo('description'),
+            'url' => home_url('/'),
+            'potentialAction' => array(
+                '@type' => 'SearchAction',
+                'target' => array(
+                    '@type' => 'EntryPoint',
+                    'urlTemplate' => home_url('/?s={search_term_string}')
+                ),
+                'query-input' => 'required name=search_term_string'
+            )
+        );
+        
+        echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . '</script>';
+    }
+}
+add_action('wp_head', 'add_website_structured_data');
+
+// Ensure Yoast SEO compatibility and add additional meta tags
+function enhance_yoast_seo_output() {
+    // Add additional meta tags for Japanese market
+    echo '<meta name="language" content="ja">';
+    echo '<meta name="geo.region" content="JP">';
+    echo '<meta name="geo.country" content="Japan">';
+    
+    // Ensure proper hreflang if not handled by Yoast
+    if (is_front_page()) {
+        echo '<link rel="alternate" hreflang="ja" href="' . home_url('/') . '">';
+    }
+}
+add_action('wp_head', 'enhance_yoast_seo_output', 1);
+
+// Improve crawlability by ensuring all internal links are valid
+function ensure_crawlable_internal_links($content) {
+    // Only run on frontend
+    if (is_admin()) {
+        return $content;
+    }
+    
+    // Fix relative URLs to absolute URLs for better crawling
+    $content = str_replace('href="/', 'href="' . home_url('/'), $content);
+    
+    return $content;
+}
+add_filter('the_content', 'ensure_crawlable_internal_links', 20);
+
+// Add canonical URL for better SEO (if not handled by Yoast)
+function add_canonical_if_missing() {
+    if (!function_exists('wpseo_auto_load') && !wp_get_canonical_url()) {
+        echo '<link rel="canonical" href="' . get_permalink() . '">';
+    }
+}
+add_action('wp_head', 'add_canonical_if_missing', 5);

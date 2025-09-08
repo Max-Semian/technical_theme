@@ -18,7 +18,7 @@ get_header(); ?>
 						<h1>K8カジノの評判やボーナスを解説！入出</h1>
 						<div class="operator-top-content-stars-block">
 							<div class="operator-top-content-stars">
-								<img src="/wp-content/uploads/2025/05/Stars.svg">
+								<img src="/wp-content/uploads/2025/05/Stars.svg" alt="???????">
 							</div>
 							<div class="operator-top-content-number">
 								4.8 <span>/ 5</span>
@@ -28,11 +28,11 @@ get_header(); ?>
 					</div>
 					<div class="operator-top-content-right">
 						<div class="operator-top-content-right-item">
-							<img src="/wp-content/uploads/2025/05/yen.svg">
+							<img src="/wp-content/uploads/2025/05/yen.svg" alt="?????">
 							<div>日本円使用可</div>
 						</div>
 						<div class="operator-top-content-right-item">
-							<img src="/wp-content/uploads/2025/05/torii-gate.svg">
+							<img src="/wp-content/uploads/2025/05/torii-gate.svg" alt="??????">
 							<div>日本円使用可</div>
 						</div>
 					</div>
@@ -101,7 +101,7 @@ get_header(); ?>
 			<div class="texts-plus-minus">
 				<div class="texts-plus-minus-left">
 					<div class="texts-plus-minus-title">
-						<img src="/wp-content/uploads/2025/06/plus.svg">
+						<img src="/wp-content/uploads/2025/06/plus.svg" alt="???????">
 						<h2>おすすめポイント</h2>
 					</div>
 					<ul>
@@ -114,7 +114,7 @@ get_header(); ?>
 				</div>
 				<div class="texts-plus-minus-right">
 					<div class="texts-plus-minus-title">
-						<img src="/wp-content/uploads/2025/06/minus.svg">
+						<img src="/wp-content/uploads/2025/06/minus.svg" alt="????????">
 						<h2>残念ポイント</h2>
 					</div>
 					<ul>
@@ -171,7 +171,7 @@ get_header(); ?>
 					<div class="pay-system-body">
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">alt="??">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -180,7 +180,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">alt="??">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -189,7 +189,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">alt="??">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -198,7 +198,7 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-item">
 							<div>
-								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">alt="??">
 							</div>
 							<div>100元</div>
 							<div>13800元</div>
@@ -211,10 +211,10 @@ get_header(); ?>
 					<div class="pay-system-body">
 						<div class="pay-system-body-row pay-logo-row">
 							<div class="pay-system-body-item" data-id="1">
-								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-1.svg">alt="??">
 							</div>
 							<div class="pay-system-body-item" data-id="2">
-								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-2.svg">alt="??">
 							</div>
 							<div class="pay-system-body-row pay-info-row" data-id="1">
 								<div class="pay-info-item">
@@ -247,10 +247,10 @@ get_header(); ?>
 						</div>
 						<div class="pay-system-body-row pay-logo-row">
 							<div class="pay-system-body-item" data-id="3">
-								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-3.svg">alt="??">
 							</div>
 							<div class="pay-system-body-item" data-id="4">
-								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">
+								<img src="/wp-content/uploads/2025/06/item-logo-4.svg">alt="??">
 							</div>
 							<div class="pay-system-body-row pay-info-row" data-id="3">
 								<div class="pay-info-item">
@@ -360,15 +360,15 @@ get_header(); ?>
 				<div class="title-info">関連リンク</div>
 				<div class="info-block-img-text">
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-1.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-1.webp" alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-2.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-2.webp">alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-3.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-3.webp">alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 				</div>
@@ -380,7 +380,7 @@ get_header(); ?>
 		<div class="subscribe-description">ジャパカジニュースレターに登録して、カジノオファーやキャンペー<br> ン、限定ボーナスの最新情報をゲットしよう！</div>
 		<form class="subscribe-mail">
 			<div class="subscribe-input-group">
-				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon">
+				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon" alt="???????">
 				<input type="text" class="subscribe-mail-input" placeholder="ジャパカジニュースレタ">
 				<input type="submit" class="subscribe-mail-button" value="登録する">
 			</div>

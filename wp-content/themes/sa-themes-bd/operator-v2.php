@@ -31,11 +31,11 @@ get_header(); ?>
 							<div class="info-operator-buttons-blocks-right">
 								<div class="card-item-lists">
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img decoding="async" src="https://katsuoncasi.com/wp-content/uploads/2025/05/yen.svg"></div>
+										<div class="card-item-lists-icon"><img decoding="async" src="https://katsuoncasi.com/wp-content/uploads/2025/05/yen.svg" alt="?????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 			 						</div>
 									<div class="cart-item-lists-item">
-										<div class="card-item-lists-icon"><img decoding="async" src="https://katsuoncasi.com/wp-content/uploads/2025/05/torii-gate.svg"></div>
+										<div class="card-item-lists-icon"><img decoding="async" src="https://katsuoncasi.com/wp-content/uploads/2025/05/torii-gate.svg" alt="??????"></div>
 										<div class="card-item-lists-text">日本円使用可</div>
 			 						</div>
 								</div>
@@ -48,7 +48,7 @@ get_header(); ?>
 							<div class="operator-right-stars">
 								<div class="operator-top-content-stars-block">
 									<div class="operator-top-content-number">5 <span>/ 5</span></div>
-			  						<div class="operator-top-content-stars" style="width: 150px;"><img decoding="async" src="/wp-content/uploads/2025/05/Stars.svg"></div>
+			  						<div class="operator-top-content-stars" style="width: 150px;"><img decoding="async" src="/wp-content/uploads/2025/05/Stars.svg" alt="???????"></div>
 								</div>
 							</div>
 						</div>
@@ -362,15 +362,15 @@ get_header(); ?>
 				<div class="title-info">関連リンク</div>
 				<div class="info-block-img-text">
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-1.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-1.webp">alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-2.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-2.webp">alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 					<a href="#" class="info-block-img-text-item">
-						<img src="/wp-content/uploads/2025/06/img-text-3.webp">
+						<img src="/wp-content/uploads/2025/06/img-text-3.webp">alt="?????????">
 						<span>オンラインカジノおすすめ ランキング</span>
 					</a>
 				</div>
@@ -382,7 +382,7 @@ get_header(); ?>
 		<div class="subscribe-description">ジャパカジニュースレターに登録して、カジノオファーやキャンペー<br> ン、限定ボーナスの最新情報をゲットしよう！</div>
 		<form class="subscribe-mail">
 			<div class="subscribe-input-group">
-				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon">
+				<img src="/wp-content/uploads/2025/05/envelope.svg" class="subscribe-mail-icon" alt="???????">
 				<input type="text" class="subscribe-mail-input" placeholder="ジャパカジニュースレタ">
 				<input type="submit" class="subscribe-mail-button" value="登録する">
 			</div>

@@ -1,7 +1,7 @@
 <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>" >
 	<input type="text" value="<?php echo get_search_query() ?>" name="s" id="s" placeholder="検索" />
-	<button id="searchsubmit">
-		<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<button id="searchsubmit" aria-label="検索を実行" type="submit">
+		<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <path d="M10.3333 9.89609H9.80667L9.62 9.71608C10.2733 8.95608 10.6667 7.96942 10.6667 6.89609C10.6667 4.50275 8.72667 2.56275 6.33333 2.56275C3.94 2.56275 2 4.50275 2 6.89609C2 9.28942 3.94 11.2294 6.33333 11.2294C7.40667 11.2294 8.39333 10.8361 9.15333 10.1828L9.33333 10.3694V10.8961L12.6667 14.2228L13.66 13.2294L10.3333 9.89609ZM6.33333 9.89609C4.67333 9.89609 3.33333 8.55609 3.33333 6.89609C3.33333 5.23609 4.67333 3.89609 6.33333 3.89609C7.99333 3.89609 9.33333 5.23609 9.33333 6.89609C9.33333 8.55609 7.99333 9.89609 6.33333 9.89609Z" fill="#3C3C3C"/>
 </svg>
 	</button>

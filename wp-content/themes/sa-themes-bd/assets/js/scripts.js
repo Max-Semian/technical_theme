@@ -1,4 +1,33 @@
 jQuery(document).ready(function($) {
+	
+	/* Fix for menu links without href for SEO crawlability */
+	$('a[href="#"][role="button"]').on('click keydown', function(e) {
+		// Prevent default behavior for anchor links
+		if (e.type === 'click' || e.which === 13 || e.which === 32) {
+			e.preventDefault();
+			
+			// Toggle submenu if this is a parent menu item
+			var $parent = $(this).closest('li.menu-item-has-children');
+			if ($parent.length) {
+				var $submenu = $parent.find('.sub-menu').first();
+				var isExpanded = $(this).attr('aria-expanded') === 'true';
+				
+				// Update ARIA state
+				$(this).attr('aria-expanded', !isExpanded);
+				
+				// Toggle submenu visibility
+				if (isExpanded) {
+					$submenu.slideUp('fast');
+				} else {
+					// Close other submenus first
+					$parent.siblings('.menu-item-has-children').find('.sub-menu').slideUp('fast');
+					$parent.siblings('.menu-item-has-children').find('a[role="button"]').attr('aria-expanded', 'false');
+					$submenu.slideDown('fast');
+				}
+			}
+		}
+	});
+	
 	/* Header меню */
 	if ($(window).width() > 1280) {
 	    $('.header-menu ul li.menu-item-has-children').on('mouseenter', function() {
@@ -21,21 +50,32 @@ jQuery(document).ready(function($) {
 	} else {
 		$('.header-menu-mobile .nav-menu ul:not(.sub-menu) li').each(function() {
 			if ($(this).hasClass('menu-item-has-children')) {
-				$(this).append('<div class="slide-mobile-menu"></div>');
+				$(this).append('<div class="slide-mobile-menu" tabindex="0" role="button" aria-label="サブメニューを開く"></div>');
 			}
 		});
 		$('.slide-mobile-menu').click(function() {
 			if ($(this).hasClass('open')) {
 				$(this).removeClass('open');
+				$(this).attr('aria-label', 'サブメニューを開く');
 				$(this).parent().find('.sub-menu').slideUp('fast');
 				$(this).parent().find('img').css('filter','grayscale(0)');
 			} else {
 				$('.slide-mobile-menu').removeClass('open');
+				$('.slide-mobile-menu').attr('aria-label', 'サブメニューを開く');
 				$('.slide-mobile-menu').parent().find('.sub-menu').slideUp('fast');
 				$('.header-menu-mobile ul li img').parent().find('img').css('filter','grayscale(0)');
 				$(this).addClass('open');
+				$(this).attr('aria-label', 'サブメニューを閉じる');
 				$(this).parent().find('.sub-menu').slideDown('fast');
 				$(this).parent().find('img').css('filter','grayscale(1)');
+			}
+		});
+		
+		/* Поддержка клавиатуры для мобильного меню */
+		$('.slide-mobile-menu').keydown(function(e){
+			if (e.which === 13 || e.which === 32) { // Enter или Space
+				e.preventDefault();
+				$(this).click();
 			}
 		});
 	}
@@ -108,6 +148,14 @@ jQuery(document).ready(function($) {
 					$(this).find('.slide-mobile-menu').css('height', height);
 				});
 			} setTimeout(mobileMenuHeightLi, 1000);
+		}
+	});
+	
+	/* Header меню бургер - поддержка клавиатуры */
+	$('.header-menu-burger').keydown(function(e){
+		if (e.which === 13 || e.which === 32) { // Enter или Space
+			e.preventDefault();
+			$(this).click();
 		}
 	});
 	/* выставляем высоту относительно ширины в карточке */
@@ -215,10 +263,10 @@ jQuery(document).ready(function($) {
 	}
 	/* Определяем блок vypad-spisok */
 	$('.vypad-spisok').each(function() {
-		var vypad_spisok = 01;
+		var vypad_spisok = 1;
 		$(this).find('.spisok-toogle-item').each(function() {
 			$(this).find('.spisok-toogle-head').prepend('<span class="toogle-number">'+addLeadingZero(vypad_spisok)+'</span>');
-			$(this).find('.spisok-toogle-head').append('<div class="toogle-button"></div>');
+			$(this).find('.spisok-toogle-head').append('<div class="toogle-button" tabindex="0" role="button" aria-label="詳細を表示" aria-expanded="false"></div>');
 			$(this).find('.spisok-toogle-text').css('display','none');
 			vypad_spisok++;
 		});
@@ -229,18 +277,29 @@ jQuery(document).ready(function($) {
 		if ($(this).parent().parent().parent().hasClass('open')) {
 			$(this).parent().parent().parent().removeClass('open');
 			$(this).parent().parent().parent().find('.spisok-toogle-text').slideUp('fast');
+			$(this).attr('aria-expanded', 'false').attr('aria-label', '詳細を表示');
 		} else {
 			$(this).parent().parent().parent().parent().parent().find('.spisok-toogle-item').removeClass('open');
 			$(this).parent().parent().parent().parent().parent().find('.spisok-toogle-text').slideUp('fast');
+			$(this).parent().parent().parent().parent().parent().find('.toogle-button').attr('aria-expanded', 'false').attr('aria-label', '詳細を表示');
 			$(this).parent().parent().parent().addClass('open');
 			$(this).parent().parent().parent().find('.spisok-toogle-text').slideDown('fast');
+			$(this).attr('aria-expanded', 'true').attr('aria-label', '詳細を隠す');
+		}
+	});
+	
+	/* Поддержка клавиатуры для vypad-spisok */
+	$('.vypad-spisok .toogle-button').keydown(function(e){
+		if (e.which === 13 || e.which === 32) { // Enter или Space
+			e.preventDefault();
+			$(this).click();
 		}
 	});
 	
 	/* Определяем блок text-inform */
 	$('.toogle-spisok').each(function() {
 		$(this).find('.toogle-spisok-item').each(function() {
-			$(this).find('.toogle-spisok-item-head').append('<div class="toogle-spisok-item-button"></div>');
+			$(this).find('.toogle-spisok-item-head').append('<div class="toogle-spisok-item-button" tabindex="0" role="button" aria-label="詳細を隠す" aria-expanded="true"></div>');
 			$(this).addClass('open');
 		});
 	});
@@ -250,9 +309,19 @@ jQuery(document).ready(function($) {
 		if ($(this).parent().parent().parent().hasClass('open')) {
 			$(this).parent().parent().parent().removeClass('open');
 			$(this).parent().parent().parent().find('.toogle-spisok-item-body').slideUp('fast');
+			$(this).attr('aria-expanded', 'false').attr('aria-label', '詳細を表示');
 		} else {
 			$(this).parent().parent().parent().addClass('open');
 			$(this).parent().parent().parent().find('.toogle-spisok-item-body').slideDown('fast');
+			$(this).attr('aria-expanded', 'true').attr('aria-label', '詳細を隠す');
+		}
+	});
+	
+	/* Поддержка клавиатуры для toogle-spisok */
+	$('.text-inform .toogle-spisok-item .toogle-spisok-item-head .toogle-spisok-item-button').keydown(function(e){
+		if (e.which === 13 || e.which === 32) { // Enter или Space
+			e.preventDefault();
+			$(this).click();
 		}
 	});
 	/* раскрываем и скрываем pay-info на странице оператора */
